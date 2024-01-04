@@ -1,0 +1,47 @@
+.headerMain{
+    width:100vw;
+    height: 80px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.headerLeftDiv{
+    display: inline-block;
+    background-color: rgba(255, 228, 196, 0.664);
+    grid-column: 1; 
+}
+
+.headerRightDiv{
+    background-color: rgba(0, 0, 255, 0.425);
+    grid-column: 2; 
+}
+
+.logoImage{
+    width: 72px;
+    height: 72px;
+}
+
+
+.headerRightDiv nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.headerRightDiv nav li {
+    display: inline;
+    margin-right: 15px; /* Add some spacing between list items if desired */
+}
+
+.headerRightDiv nav a {
+    text-decoration: none; /* Remove underlines from links */
+    color: white; /* Set link color */
+    padding: 8px 15px; /* Add padding to links for better spacing */
+    background-color: #333; /* Background color for links */
+    border-radius: 5px; /* Optional: Add rounded corners to links */
+}
+
+.headerRightDiv nav a:hover {
+    background-color: #555; /* Change background color on hover */
+}
