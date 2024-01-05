@@ -125,41 +125,49 @@
 
 
 .homeImgSilde {
-    background-color: aqua;
+   
 }
 
 .carousel {
-    background-color: #f5c905;
+   
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
+    
     align-items: center;
 }
 
 .carouselItem {
     display: grid;
-    grid-template-rows: 480px 200px;
+    grid-template-rows: 70% 30%;
     align-items: center;
+ 
     
 }
 
 .carouselImgDiv{
-    width: 480px; 
-    height: 480px; 
-    overflow: hidden;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.carouselImgDiv img {
     width: 100%; 
     height: 100%; 
-    object-fit: cover;
-    background-color: rgb(255, 0, 0);
+    grid-row: 1;
+    
 }
 
+.itemImg {
+    width: 480px; 
+    height: 480px; 
+    object-fit: cover;
+    overflow: hidden;
+  
+}
 
-.carouselItem div {
+.carouselInfoDiv{
+    width: 100%; 
+    height: 100%;
+    grid-row: 2;
+ 
+}
+
+.carouselInfoDiv div {
     
 
     display: flex;
@@ -177,7 +185,7 @@
 
 }
 
-.carouselItem p {
+.carouselInfoDiv p {
     color: #333333;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 28px;
@@ -190,7 +198,7 @@
 
 .carouselItem a {}
 
-.carouselItem a button {
+.carouselInfoDiv a button {
     border: 1px solid;
     border-color: #333333;
     border-radius: 20px;
