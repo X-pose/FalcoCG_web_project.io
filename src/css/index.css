@@ -1,231 +1,327 @@
 .headerMain {
-    width: 100vw;
-    height: 100px;
-
-    display: grid;
-    grid-template-columns: 20% 80%;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add box shadow to the bottom */
-
+width: 100vw;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 100px;
+  display: grid;
+  background-color: #ffffff;
+  grid-template-columns: 20% 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Add box shadow to the bottom */
 }
 
-
-
 .headerLeftDiv {
-    height: 100px;
+  height: 100px;
 
-    grid-column: 1;
-    display: flex;
-    align-items: center;
+  grid-column: 1;
+  display: flex;
+  align-items: center;
 }
 
 .logoImage {
-    display: inline;
-    width: 82px;
-    height: 82px;
-    margin-left: 10px;
+  display: inline;
+  width: 82px;
+  height: 82px;
+  margin-left: 10px;
 }
-
 
 .headerLeftDiv h1 {
-    display: inline;
-    color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 48px;
-    font-weight: 600;
-    height: 58px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 25px;
+  display: inline;
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 25px;
 }
 
-
 .headerRightDiv {
-    display: flex;
-    align-items: center;
-    grid-column: 2;
+  display: flex;
+  align-items: center;
+  grid-column: 2;
 }
 
 .headerRightDiv nav {
-    margin-left: auto;
-    /* Push the nav to the right */
-    margin-right: 40px;
+  margin-left: auto;
+  /* Push the nav to the right */
+  margin-right: 40px;
 }
 
 .headerRightDiv nav ul {
-    list-style: none;
-    justify-content: flex-end;
-    /* Align items to the right */
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  justify-content: flex-end;
+  /* Align items to the right */
+  padding: 0;
+  margin: 0;
 }
 
-
 .headerRightDiv nav li {
-    display: inline;
+  display: inline;
 
-    margin-right: 15px;
-    /* Add some spacing between list items if desired */
+  margin-right: 15px;
+  /* Add some spacing between list items if desired */
 }
 
 .headerRightDiv nav a {
-    text-decoration: none;
-    /* Remove underlines from links */
-    padding: 8px 15px;
-    /* Add padding to links for better spacing */
-    background-color: transparent;
-    /* Background color for links */
-    color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
-    height: 58px;
-    letter-spacing: 0;
-    line-height: normal;
-    transition: color 0.3s ease, transform 0.3s ease;
-    /* Add smooth transition for color and transform */
+  text-decoration: none;
+  /* Remove underlines from links */
+  padding: 8px 15px;
+  /* Add padding to links for better spacing */
+  background-color: transparent;
+  /* Background color for links */
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  height: 58px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
+  /* Add smooth transition for color and transform */
 }
 
 .headerRightDiv nav a:hover {
-    color: #f5c905;
-    transform: translateX(5px);
-    border-bottom: 2px solid #f5c905;
-    /* Move the text 5 pixels to the right on hover */
+  color: #f5c905;
+  transform: translateX(5px);
+  border-bottom: 2px solid #f5c905;
+  /* Move the text 5 pixels to the right on hover */
 }
 
-.homeTitle {
+#Home{
     width: 100vw;
+    background-color: red;
+}
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 30px;
-    align-items: center;
+#Feedback{
+    background-color: green;
+}
 
+.carousel-container{
+    width: 100vw;
+}
+.homeTitle {
+  
+    width: 100vw;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  align-items: center;
 }
 
 .homeTitle h2 {
-    color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 48px;
-    font-weight: 600;
-    left: 0;
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 48px;
+  font-weight: 600;
+  left: 0;
 
-    letter-spacing: 0;
-    margin-bottom: 10px;
-
+  letter-spacing: 0;
+  margin-bottom: 10px;
 }
 
 .homeTitle h6 {
-    color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 0px;
-    left: 0;
-    margin-bottom: 0px;
-    letter-spacing: 0;
-
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0px;
+  left: 0;
+  margin-bottom: 0px;
+  letter-spacing: 0;
 }
 
-
 .homeImgSilde {
-   
 }
 
 .carousel {
-   
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    align-items: center;
+    height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y:hidden;
+  align-items: center;
+  margin-top: 0px;
+  background-color: #f5c905;
 }
 
 .carouselItem {
-    display: grid;
-   position: relative;
-    grid-template-rows: 70% 30%;
-    align-items: center;
-    margin-bottom: 20px;
+  display: grid;
+  position: relative;
+  grid-template-rows: 70% 30%;
+  align-items: center;
+  margin-bottom: 20px;
 
-    transform: scale(0.8);
-    
-    
+  transform: scale(0.8);
 }
 
-.carouselImgDiv{
-    width: 100%; 
-    height: 100%; 
-    grid-row: 1;
-    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
+.carouselImgDiv {
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
 }
 
 .itemImg {
-    width: 480px; 
-    height: 480px; 
-    object-fit: cover;
-    overflow: hidden;
-  
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
-.carouselInfoDiv{
-    width: 100%; 
-    height: 100%;
-    grid-row: 2;
-    
+.carouselInfoDiv {
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
 }
 
 .carouselInfoDiv div {
-    
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 480px;
-    
-    background-color: #f2f2f2;
-    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
-    height: 200px;
-    left: 0;
+  background-color: #f2f2f2;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
+  height: 200px;
+  left: 0;
 
-    top: 0;
-
+  top: 0;
 }
 
 .carouselInfoDiv p {
-    color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 28px;
-    font-weight: 600;
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 28px;
+  font-weight: 600;
 
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-.carouselItem a {}
+.carouselItem a {
+}
 
 .carouselInfoDiv a button {
-    border: 1px solid;
-    border-color: #333333;
-    border-radius: 20px;
-    height: 66px;
-    left: 0;
+  border: 1px solid;
+  border-color: #333333;
+  border-radius: 20px;
+  height: 66px;
+  left: 0;
 
-    top: 0;
-    width: 341px;
+  top: 0;
+  width: 341px;
 
+  color: #333333;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/*Feedback styles starts here*/
+.feedbackPage {
+  display: grid;
+  
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: 25% 75%;
+}
+
+.feedbackTitle h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top:100px;
+    justify-content: center;
+    align-items: center;
+  color: #333333;
+  text-align: center;
+  font-family: "Inter-SemiBold", Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+}
+
+.feedbackFormDiv {
+
+    width: 50vw;
+transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  border-radius: 64px;
+    margin-top: 50px;
+  border: 3px solid #454545;
+  background: #fff;
+  box-shadow: 0px 4px 21.7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.feedbackFormDiv label{
     color: #333333;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 24px;
-    font-weight: 600;
+
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.inputStyle {
+    border-radius: 10px;
+border: 1px solid #454545;
+background: #FFFEFE;
+height: 50px;
+}
+
+.textField{
+    width: 45vw;
+    display: flex;  
+    flex-direction: column;
+    margin-bottom: 30px;
+    justify-content: left;
+}
+
+.textField label{
+   
+    display: block;
+}
+
+.submitBtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 26px;
+border: 3px solid #454545;
+background: rgba(255, 255, 255, 0.00);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 
+color: #333333;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
 
+.submitBtnDiv{
+    display: flex;
+    justify-content: center;
+}
 
+.formContainer{
+    display: flex;
+    justify-content: center;
 }
