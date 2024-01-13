@@ -1,3 +1,21 @@
+/* ---- particles.js container ---- */
+#particles-js {
+
+    width: 100%;
+    height: 100%;
+    
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+}
+
+.content-container {
+    position: relative;
+
+    /* Place content on top of particles.js */
+}
+
 .headerMain {
     width: 100vw;
     height: 100px;
@@ -94,13 +112,17 @@
 
 #Home {
     width: 100vw;
+    z-index: 1;
+    position: relative;
 
 }
+
 
 #Feedback {}
 
 .carousel-container {
     width: 100vw;
+    z-index: 100
 }
 
 .homeTitle {
@@ -136,9 +158,9 @@
     letter-spacing: 0;
 }
 
-.homeImgSilde {}
 
 .carousel {
+    position: absolute;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -149,6 +171,12 @@
     align-items: center;
     margin-top: 0px;
 
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
 
 .carouselItem {
@@ -157,7 +185,7 @@
     grid-template-rows: 70% 30%;
     align-items: center;
     margin-bottom: 20px;
-
+    z-index: 1;
     transform: scale(0.8);
 }
 
@@ -328,11 +356,11 @@
 .footerContainer {
     width: 100vw;
     min-height: 400px;
-    display:flex;
-  flex-direction: column;
-    background-color:#F3F3F3;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
 
- 
+
 }
 
 
@@ -389,10 +417,10 @@
 
 }
 
-.sideContainer{
+.sideContainer {
     display: flex;
     justify-content: flex-end;
-    
+
     margin-right: 80px;
 }
 
@@ -407,7 +435,7 @@
     left: 0;
     letter-spacing: 0;
     line-height: normal;
-    
+
     display: flex;
     align-items: center;
 }
@@ -417,7 +445,7 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 20px;
-  
+
 }
 
 .inline_row span {
@@ -434,7 +462,8 @@
     margin-left: 10px;
     align-items: center;
 }
-.right{
+
+.right {
     margin-left: 80px;
     align-self: start;
 }
