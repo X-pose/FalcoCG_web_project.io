@@ -105,6 +105,7 @@
 
     width: 100vw;
     z-index: 1;
+    min-height: 100vh;
     height: fit-content;
     background-color: #EDF0F5;
     padding-top: 90px;
@@ -113,7 +114,8 @@
 
 #About {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -124,9 +126,22 @@
 
     width: 100vw;
     z-index: 1;
+    min-height: 100vh;
     height: fit-content;
     background-color: #EDF0F5;
     padding-top: 50px;
+}
+
+#Services {
+    display: flex;
+    width: 100vw;
+
+    min-height: 100vh;
+    height: fit-content;
+    padding-top: 100px;
+    background-color: #EDF0F5;
+    align-items: center;
+    flex-direction: column;
 }
 
 .carousel-container {
@@ -406,10 +421,10 @@
 .aboutFalcoTitle {
     width: fit-content;
     height: fit-content;
-   
+
 }
 
-.aboutFalcoTitle h2{
+.aboutFalcoTitle h2 {
     color: #121315;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 48px;
@@ -419,6 +434,7 @@
     left: 0;
     letter-spacing: 0;
     line-height: normal;
+
 }
 
 .AboutPara {
@@ -435,6 +451,40 @@
 
 }
 
+/*Service CSS starts here*/
+
+.ServicesFlexBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    height: fit-content;
+    justify-content: center;
+
+}
+
+.ServiceBox {
+    background-color: #ffffff;
+    border: 3px solid;
+    border-color: #121315;
+    border-radius: 24px;
+    box-shadow: 0px 4px 4px #454545;
+    width: 300px;
+    height: 300px;
+    left: 0;
+    top: 0;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+}
 
 /* Footer CSS starts here*/
 
