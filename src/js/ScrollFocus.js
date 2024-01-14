@@ -29,6 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    if (AboutLink) {
+        AboutLink.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default link behavior
+            var AboutSection = document.getElementById('About');
+            
+            if (AboutSection ) {
+                AboutSection .scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
     
 
 });

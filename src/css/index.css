@@ -1,7 +1,7 @@
 /* ---- particles.js container ---- */
 
 .content-container {
-    
+
 
     /* Place content on top of particles.js */
 }
@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    
+
     display: grid;
     background-color: #ffffff;
     grid-template-columns: 20% 80%;
@@ -102,18 +102,26 @@
 }
 
 #Home {
-    
+
     width: 100vw;
     z-index: 1;
     height: fit-content;
     background-color: #EDF0F5;
-   padding-top: 90px;
-    
+    padding-top: 90px;
+
 }
 
+#About {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #EDF0F5;
+}
 
 #Feedback {
-    
+
     width: 100vw;
     z-index: 1;
     height: fit-content;
@@ -123,14 +131,14 @@
 
 .carousel-container {
     width: 100vw;
-   
-    
+
+
 }
 
 .homeTitle {
 
     width: 100vw;
-   
+
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -177,7 +185,7 @@
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    
+
 
 }
 
@@ -188,7 +196,7 @@
     align-items: center;
     margin-bottom: 20px;
     margin-top: -50px;
-   
+
     transform: scale(0.6);
 }
 
@@ -263,10 +271,10 @@
     width: 100vw;
     height: 100vh;
     grid-template-rows: 25% 75%;
-   
+
 }
 
-.feedbackTitle{
+.feedbackTitle {
     width: 100vw;
     height: 100%;
     margin-top: 50px;
@@ -291,8 +299,8 @@
 
 }
 
-.feedbackTitle h3{
-    
+.feedbackTitle h3 {
+
     display: flex;
     margin-top: 5px;
     justify-content: center;
@@ -380,6 +388,54 @@
     justify-content: center;
 }
 
+
+
+
+
+
+/*About CSS starts here*/
+
+.LogoMain img {
+    display: block;
+    width: 250px;
+    height: 250px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.aboutFalcoTitle {
+    width: fit-content;
+    height: fit-content;
+   
+}
+
+.aboutFalcoTitle h2{
+    color: #121315;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+.AboutPara {
+    color: #121315;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 24px;
+    font-weight: 600;
+    height: 116px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: 29.1px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+
 /* Footer CSS starts here*/
 
 .footerContainer {
@@ -388,7 +444,7 @@
     display: flex;
     flex-direction: column;
     background-color: #121315;
-    
+
 
 }
 
