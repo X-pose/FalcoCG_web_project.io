@@ -144,6 +144,31 @@
     flex-direction: column;
 }
 
+#particles-js3{
+    display: flex;
+    justify-content: center;
+}
+
+#Contact {
+
+    width: 100vw;
+    z-index: 1;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #EDF0F5;
+}
+
+.ContactContainer{
+    display: flex;
+    position: absolute;
+    min-height: 100vh;
+    height: fit-content;
+    padding-top: 100px;
+    
+    align-items: center;
+    flex-direction: column;
+}
+
 .carousel-container {
     width: 100vw;
 
@@ -277,6 +302,10 @@
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 24px;
     font-weight: 600;
+}
+
+.carouselInfoDiv a button:hover {
+    background-color: #e2e0e0;
 }
 
 /*Feedback styles starts here*/
@@ -486,6 +515,54 @@
     line-height: normal;
 }
 
+/* Contact CSS starts here*/
+
+.contactOptionsDiv {
+    display: flex;
+    width: 100vw;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+}
+
+.optionRow {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #121315;
+    border-radius: 24px;
+    height: fit-content;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    width: 50vw;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.optionRow:hover{
+    background-color: #ececec;
+}
+
+.optionRow img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.optionRow p {
+    color: #121315;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 32px;
+    font-weight: 600;
+    height: 46px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: 20px;
+}
+
 /* Footer CSS starts here*/
 
 .footerContainer {
@@ -582,6 +659,11 @@
     align-items: center;
     margin-bottom: 20px;
 
+}
+
+.inline_row img{
+    width: 25px;
+    height: 25px;
 }
 
 .inline_row span {
