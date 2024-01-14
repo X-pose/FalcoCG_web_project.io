@@ -144,14 +144,27 @@
     flex-direction: column;
 }
 
-#Contact {
+#particles-js3{
     display: flex;
-    width: 100vw;
+    justify-content: center;
+}
 
+#Contact {
+
+    width: 100vw;
+    z-index: 1;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #EDF0F5;
+}
+
+.ContactContainer{
+    display: flex;
+    position: absolute;
     min-height: 100vh;
     height: fit-content;
     padding-top: 100px;
-    background-color: #EDF0F5;
+    
     align-items: center;
     flex-direction: column;
 }
@@ -526,6 +539,10 @@
     width: 50vw;
     padding-left: 30px;
     margin-top: 50px;
+}
+
+.optionRow:hover{
+    background-color: #ececec;
 }
 
 .optionRow img {
