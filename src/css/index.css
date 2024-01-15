@@ -152,7 +152,15 @@
     align-items: center;
     flex-direction: column;
 }
-
+#particles-js{
+    display: flex;
+    width: 100vw;
+    
+}
+#particles-js2{
+    display: flex;
+    width: 100vw;
+}
 #particles-js3{
     display: flex;
     width: 100vw;
@@ -177,6 +185,7 @@
     padding-top: 100px;
     align-items: center;
     flex-direction: column;
+    background-color: #45454538;
 }
 
 .carousel-container {
@@ -230,13 +239,13 @@
     overflow-y: hidden;
     align-items: center;
     margin-top: 0px;
-    
+    position: absolute;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 
-
+    background-color: #24242488;
 }
 
 .carouselItem {
