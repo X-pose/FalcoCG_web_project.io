@@ -6,6 +6,7 @@
     /* Place content on top of particles.js */
 }
 
+
 .headerMain {
     width: 100vw;
     height: 90px;
@@ -101,12 +102,20 @@
     /* Move the text 5 pixels to the right on hover */
 }
 
-#Home {
-
+.HomeSectionDiv{
     width: 100vw;
-    z-index: 1;
     min-height: 100vh;
     height: fit-content;
+    background-color: #45454552;
+    position: absolute;
+}
+#Home {
+
+    position: relative;
+    width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    
     background-color: #EDF0F5;
     padding-top: 90px;
 
@@ -164,7 +173,6 @@
     min-height: 100vh;
     height: fit-content;
     padding-top: 100px;
-    
     align-items: center;
     flex-direction: column;
 }
@@ -210,7 +218,7 @@
 
 
 .carousel {
-    position: absolute;
+   
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -220,7 +228,7 @@
     overflow-y: hidden;
     align-items: center;
     margin-top: 0px;
-
+    
     left: 0;
     right: 0;
     margin-left: auto;
@@ -517,12 +525,13 @@
 
 /* Contact CSS starts here*/
 
-.contactOptionsDiv {
+.contactOptionDiv {
     display: flex;
     width: 100vw;
     height: fit-content;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 .optionRow {
@@ -570,6 +579,8 @@
     min-height: 400px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    z-index: 100;
     background-color: #121315;
 
 
