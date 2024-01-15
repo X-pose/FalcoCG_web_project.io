@@ -106,7 +106,7 @@
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
-    background-color: #45454552;
+
     position: absolute;
 }
 #Home {
@@ -155,7 +155,9 @@
 
 #particles-js3{
     display: flex;
+    width: 100vw;
     justify-content: center;
+    position: absolute;
 }
 
 #Contact {
