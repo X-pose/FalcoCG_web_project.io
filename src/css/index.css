@@ -6,26 +6,20 @@
     /* Place content on top of particles.js */
 }
 
-
 .headerMain {
+    display: flex;
     width: 100vw;
     height: 90px;
     position: fixed;
     top: 0;
     z-index: 1000;
-
-    display: grid;
+    justify-content: space-between; /* Updated to space the children */
     background-color: #ffffff;
-    grid-template-columns: 20% 80%;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    /* Add box shadow to the bottom */
 }
-
 
 .headerLeftDiv {
     height: 90px;
-
-    grid-column: 1;
     display: flex;
     align-items: center;
 }
@@ -34,7 +28,7 @@
     display: inline;
     width: 75px;
     height: 75px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 
 .headerLeftDiv h1 {
@@ -53,37 +47,29 @@
 .headerRightDiv {
     display: flex;
     align-items: center;
-    grid-column: 2;
 }
 
 .headerRightDiv nav {
     margin-left: auto;
-    /* Push the nav to the right */
-    margin-right: 40px;
 }
 
 .headerRightDiv nav ul {
     list-style: none;
+    display: flex; /* Add this line to allow justify-content to work */
     justify-content: flex-end;
-    /* Align items to the right */
     padding: 0;
     margin: 0;
 }
 
 .headerRightDiv nav li {
     display: inline;
-
     margin-right: 15px;
-    /* Add some spacing between list items if desired */
 }
 
 .headerRightDiv nav a {
     text-decoration: none;
-    /* Remove underlines from links */
     padding: 8px 15px;
-    /* Add padding to links for better spacing */
     background-color: transparent;
-    /* Background color for links */
     color: #121315;
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 24px;
@@ -92,15 +78,14 @@
     letter-spacing: 0;
     line-height: normal;
     transition: color 0.3s ease, transform 0.3s ease;
-    /* Add smooth transition for color and transform */
 }
 
 .headerRightDiv nav a:hover {
     color: #f5c905;
     transform: translateX(5px);
     border-bottom: 2px solid #f5c905;
-    /* Move the text 5 pixels to the right on hover */
 }
+
 
 .HomeSectionDiv{
     width: 100vw;
@@ -813,7 +798,7 @@ hr {
 
 .headerRightDiv {
     
-    transform: scale(0.8);
+  
   
 }
 
@@ -835,7 +820,7 @@ hr {
     padding: 8px 15px;
     /* Add padding to links for better spacing */
   
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     height: 58px;
     
@@ -844,3 +829,8 @@ hr {
 
 
 }
+
+@media only screen and (max-width: 924px){
+
+}
+
