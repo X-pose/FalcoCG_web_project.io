@@ -16,8 +16,9 @@
     align-items: flex-start;
     justify-content: flex-start;
     list-style: none;
+    border-radius: 20px;
     
-  
+
 }
 
 .MenuIcon{
@@ -29,11 +30,26 @@
 .SideBar li{
     width: 100%;
     height: 50px;
-    margin-left: 10px;
+   
     border-bottom: 1px solid #dddcdc;
     display: flex;
     align-items: center;
     
+   
+}
+
+.SideBar li a{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: transparent;
+    color: #121315;
+    font-family: "Inter-SemiBold", Helvetica;
+    font-size: 18px;
+    font-weight: 600;
+   
+    letter-spacing: 0;
+    line-height: normal;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .headerMain {
@@ -127,7 +143,7 @@
 
 .HomeSectionDiv {
     width: 100vw;
-    min-height: 100vh;
+   
     height: fit-content;
 
 
@@ -138,7 +154,7 @@
 
     width: 100vw;
     display: flex;
-    min-height: 100vh;
+    
     height: fit-content;
     background-color: #EDF0F5;
     padding-top: 90px;
@@ -147,7 +163,7 @@
 
 #About {
     width: 100vw;
-    padding-bottom: 200px;
+    padding-bottom: 25vw;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -335,7 +351,7 @@
     line-height: normal;
 }
 
-.carouselItem a {}
+
 
 .carouselInfoDiv a button {
     border: 1px solid;
@@ -520,7 +536,7 @@
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 24px;
     font-weight: 600;
-    height: 116px;
+    height: fit-content;
     left: 0;
     letter-spacing: 0;
     line-height: 29.1px;
@@ -860,6 +876,10 @@ hr {
     .MenuIcon{
         display: none;
     }
+
+    .SideBar{
+        display: none;
+    }
     
 
 }
@@ -872,5 +892,122 @@ hr {
     
     .headerRightNav{
         display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+
+    .feedbackFormDiv {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+    .textField{
+        width: 80%;
+    }
+    .form{
+        width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .logoImage{
+        width: 50px;
+        height: 50px;
+    }
+
+    
+    .headerLeftDiv h1{
+        display: flex;
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 0;
+        align-items: center;
+    }
+
+    .homeTitle h2{
+        margin-top: 12vw;
+        font-size: 6vw;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+    }
+
+    .homeTitle h6{
+       
+        font-size: 6vw;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+    .carouselItem {
+        transform: scale(60%);
+    }
+
+    .LogoMain img {
+        display: block;
+        width: 50vw;
+        height: 50vw;
+        margin-top: 14vw;
+        margin-bottom: 1vw;
+    }
+    .aboutFalcoTitle h2{
+        font-size: 10vw;
+    }
+
+    .AboutPara{
+        font-size: 4vw;
+        height: fit-content;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    .feedbackTitle h2{
+        font-size: 6vw;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feedbackTitle h3{
+        font-size: 3.5vw;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+    }
+
+    .feedbackFormDiv{
+        width: 90vw;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textField{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+    .aboutFalcoTitle h2{
+        font-size: 6vw;
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+    }
+
+    .ServicesFlexBox{
+        width: 90vw;
+    }
+    .contactOptionDiv a{
+        width: 80vw;
+    }
+    .optionRow{
+        width:auto;
+
     }
 }
