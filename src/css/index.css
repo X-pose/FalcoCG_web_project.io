@@ -1,9 +1,39 @@
 /* ---- particles.js container ---- */
 
-.content-container {
+.SideBar {
 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: fit-content;
+    width: 250px;
+    z-index: 999;
+    background-color: #EDF0F5;
+    backdrop-filter: blur(10px);
+    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style: none;
+    
+  
+}
 
-    /* Place content on top of particles.js */
+.MenuIcon{
+    display: none;
+   
+   align-self: center;
+   margin-right: 50px;
+}
+.SideBar li{
+    width: 100%;
+    height: 50px;
+    margin-left: 10px;
+    border-bottom: 1px solid #dddcdc;
+    display: flex;
+    align-items: center;
+    
 }
 
 .headerMain {
@@ -13,7 +43,8 @@
     position: fixed;
     top: 0;
     z-index: 1000;
-    justify-content: space-between; /* Updated to space the children */
+    justify-content: space-between;
+    /* Updated to space the children */
     background-color: #ffffff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -44,9 +75,15 @@
     margin-left: 25px;
 }
 
+.headerRightNav{
+    display: block;
+}
+
 .headerRightDiv {
     display: flex;
     align-items: center;
+    margin-right: 80px;
+    width: fit-content;
 }
 
 .headerRightDiv nav {
@@ -55,7 +92,8 @@
 
 .headerRightDiv nav ul {
     list-style: none;
-    display: flex; /* Add this line to allow justify-content to work */
+    display: flex;
+    /* Add this line to allow justify-content to work */
     justify-content: flex-end;
     padding: 0;
     margin: 0;
@@ -87,16 +125,17 @@
 }
 
 
-.HomeSectionDiv{
+.HomeSectionDiv {
     width: 100vw;
     min-height: 100vh;
     height: fit-content;
 
-    
+
 }
+
 #Home {
 
-    
+
     width: 100vw;
     display: flex;
     min-height: 100vh;
@@ -120,7 +159,7 @@
 
     width: 100vw;
 
-  
+
     height: fit-content;
     background-color: #EDF0F5;
     padding-top: 50px;
@@ -130,25 +169,28 @@
     display: flex;
     width: 100vw;
 
-    
+
     height: fit-content;
     padding-top: 100px;
     background-color: #EDF0F5;
     align-items: center;
     flex-direction: column;
 }
-#particles-js{
+
+#particles-js {
     display: flex;
     width: 100vw;
     position: absolute;
     z-index: 0;
-    
+
 }
-#particles-js2{
+
+#particles-js2 {
     display: flex;
     width: 100vw;
 }
-#particles-js3{
+
+#particles-js3 {
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -163,16 +205,16 @@
     background-color: #EDF0F5;
 }
 
-.ContactContainer{
+.ContactContainer {
     display: flex;
     position: absolute;
-   
+
     height: fit-content;
     padding-top: 100px;
     align-items: center;
     flex-direction: column;
-    
-    
+
+
 }
 
 .carousel-container {
@@ -216,8 +258,8 @@
 
 
 .carousel {
-    
-   
+
+
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -227,13 +269,13 @@
     overflow-y: hidden;
     align-items: center;
     margin-top: 0px;
-   
+
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
 
-    
+
 }
 
 .carouselItem {
@@ -318,7 +360,7 @@
 /*Feedback styles starts here*/
 .feedbackPage {
     display: grid;
-    
+
     width: 100vw;
     height: 100%;
     grid-template-rows: 25% 75%;
@@ -524,7 +566,7 @@
 
 /* Contact CSS starts here*/
 
-.contactOptionWrapper{
+.contactOptionWrapper {
     display: flex;
     align-items: center;
     height: 100%;
@@ -537,8 +579,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 80px;
-    
- 
+
+
 }
 
 .optionRow {
@@ -557,7 +599,7 @@
     margin-top: 25px;
 }
 
-.optionRow:hover{
+.optionRow:hover {
     background-color: #ececec;
 }
 
@@ -572,7 +614,7 @@
     font-family: "Inter-SemiBold", Helvetica;
     font-size: 24px;
     font-weight: 600;
-   
+
     left: 0;
     letter-spacing: 0;
     line-height: normal;
@@ -584,30 +626,30 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; 
+    min-height: 100vh;
     margin: 0;
-  }
-  
-  .main {
-    flex: 1; 
-  }
-  
-  .footerContainer {
+}
+
+.main {
+    flex: 1;
+}
+
+.footerContainer {
     width: 100vw;
     min-height: 400px;
     display: flex;
     flex-direction: column;
     background-color: #121315;
-  }
+}
 
 .upperFooter {
     margin-top: 20px;
-   
+
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    
-   
+
+
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -618,7 +660,7 @@ body {
     width: 40%;
     height: 100%;
     grid-template-rows: 40% 60%;
-    
+
     margin-right: 80px;
 
 }
@@ -656,7 +698,7 @@ body {
 }
 
 
-.middle{
+.middle {
     margin-right: 80px;
     width: fit-content;
     height: fit-content;
@@ -684,7 +726,7 @@ body {
 
 }
 
-.inline_row img{
+.inline_row img {
     width: 25px;
     height: 25px;
 }
@@ -705,9 +747,9 @@ body {
 }
 
 .right {
-    
-  align-items: right;
-   width: fit-content;
+
+    align-items: right;
+    width: fit-content;
 }
 
 .right h3 {
@@ -737,100 +779,98 @@ hr {
 }
 
 /*For Tablet*/
-@media only screen and (max-width: 1024px){
-    .leftLower p{
-        font-size:0.8em;   
+@media only screen and (max-width: 1024px) {
+    .leftLower p {
+        font-size: 0.8em;
     }
 
+
+
+
+
+
+    .optionRow {
+
+        margin-top: 0.9em;
+    }
+
+
+
+    .optionRow img {
+        width: 25px;
+        height: 25px;
+
+    }
+
+    .optionRow p {
+        color: #121315;
+        font-family: "Inter-SemiBold", Helvetica;
+        font-size: 16px;
+        font-weight: 600;
+
+        left: 0;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-left: 20px;
+    }
+
+    .ServiceBox {
+
+        border-radius: 24px;
+
+        height: 200px;
+        width: 200px;
+
+        margin: 40px;
+
+        font-size: 16px;
+        font-weight: 600;
+
+        left: 0;
+        letter-spacing: 0;
+        line-height: normal;
+        transform: scale(1.2);
+    }
+
+    .ServicesFlexBox {
+        margin-top: -50px;
+        transform: scale(0.8);
+    }
+
+
+    .headerRightDiv {}
+
+    .headerRightDiv nav {}
+
+    .headerRightDiv nav ul {}
+
+    .headerRightDiv nav li {}
+
+    .headerRightDiv nav a {
+
+        padding: 8px 15px;
+        /* Add padding to links for better spacing */
+
+        font-size: 20px;
+        font-weight: 600;
+        height: 58px;
+
+    }
+
+    .MenuIcon{
+        display: none;
+    }
     
 
+}
 
+@media only screen and (max-width: 924px) {
 
-
-.optionRow {
+    .MenuIcon{
+        display: flex;
+    }
     
-    margin-top: 0.9em;
+    .headerRightNav{
+        display: none;
+    }
 }
-
-
-
-.optionRow img {
-    width: 25px;
-    height: 25px;
-
-}
-
-.optionRow p {
-    color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 16px;
-    font-weight: 600;
- 
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 20px;
-}
-
-.ServiceBox {
-    
-    border-radius: 24px;
-    
-    height: 200px;
-    width: 200px;
-   
-    margin: 40px;
-    
-    font-size: 16px;
-    font-weight: 600;
-
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    transform: scale(1.2);
-}
-
-.ServicesFlexBox{
-    margin-top: -50px;
-    transform: scale(0.8);
-}
-
-
-.headerRightDiv {
-    
-  
-  
-}
-
-.headerRightDiv nav {
-    
-
-}
-
-.headerRightDiv nav ul {
-    
-}
-
-.headerRightDiv nav li {
-    
-}
-
-.headerRightDiv nav a {
-    
-    padding: 8px 15px;
-    /* Add padding to links for better spacing */
-  
-    font-size: 20px;
-    font-weight: 600;
-    height: 58px;
-    
-}
-
-
-
-}
-
-@media only screen and (max-width: 924px){
-
-}
-
