@@ -123,7 +123,7 @@
 
 #About {
     width: 100vw;
-    min-height: 100vh;
+    padding-bottom: 200px;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -134,8 +134,8 @@
 #Feedback {
 
     width: 100vw;
-    z-index: 1;
-    min-height: 100vh;
+
+  
     height: fit-content;
     background-color: #EDF0F5;
     padding-top: 50px;
@@ -145,7 +145,7 @@
     display: flex;
     width: 100vw;
 
-    min-height: 100vh;
+    
     height: fit-content;
     padding-top: 100px;
     background-color: #EDF0F5;
@@ -333,9 +333,9 @@
 /*Feedback styles starts here*/
 .feedbackPage {
     display: grid;
-    position: absolute;
+    
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     grid-template-rows: 25% 75%;
 
 }
@@ -758,7 +758,7 @@ hr {
     }
 
     
-/* Contact CSS starts here*/
+
 
 
 
@@ -809,6 +809,38 @@ hr {
     margin-top: -50px;
     transform: scale(0.8);
 }
+
+
+.headerRightDiv {
+    
+    transform: scale(0.8);
+  
+}
+
+.headerRightDiv nav {
+    
+
+}
+
+.headerRightDiv nav ul {
+    
+}
+
+.headerRightDiv nav li {
+    
+}
+
+.headerRightDiv nav a {
+    
+    padding: 8px 15px;
+    /* Add padding to links for better spacing */
+  
+    font-size: 24px;
+    font-weight: 600;
+    height: 58px;
+    
+}
+
 
 
 }
