@@ -25,7 +25,7 @@
     display: none;
    
    align-self: center;
-   margin-right: 50px;
+   margin-right:4vw;
 }
 .SideBar li{
     width: 100%;
@@ -98,7 +98,7 @@
 .headerRightDiv {
     display: flex;
     align-items: center;
-    margin-right: 80px;
+    margin-right: 2vw;
     width: fit-content;
 }
 
@@ -701,6 +701,10 @@ body {
 
 }
 
+.leftLower{
+    height: fit-content;
+}
+
 .leftLower p {
     color: #EDF0F5;
     font-family: "Inter-SemiBold", Helvetica;
@@ -922,7 +926,7 @@ hr {
     
     .headerLeftDiv h1{
         display: flex;
-        font-size: 36px;
+        font-size: 7vw;
         margin-top: 0;
         margin-bottom: 0;
         align-items: center;
@@ -1010,4 +1014,73 @@ hr {
         width:auto;
 
     }
+
+    .left{
+        display: flex;
+       
+        flex-direction: column;
+        margin-right: 3vw;
+        width: 90vw;
+    }
+    .leftUpper{
+        display: flex;
+        width: 90vw;
+        height: fit-content;
+        flex-direction: row;
+    }
+
+    .leftUpper h1{
+        font-size: 10vw;
+        display: flex;
+        align-items: center;
+    }
+    .leftUpper img{
+        margin-left: 3vw;
+    }
+
+    .upperFooter{
+        padding-left:3vw;
+        padding-right: 3vw;
+    }
+    .leftLower{
+        width: 90vw;
+    }
+
+    .middle a{
+        width: fit-content;
+    }
+    
 }
+
+@media only screen and (max-width: 284px){
+
+    .inline_row img{
+        width: 5vw;
+        height: 5vw;
+    }
+    .inline_row span{
+        font-size: 5vw;
+    }
+
+    .lowerFooter hr{
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+
+    .lowerFooter p {
+        font-size: 6vw;
+    }
+
+    .middle h3{
+        font-size: 12vw;
+    }
+
+    .right h3{
+        font-size: 12vw;
+    }
+
+    .MenuIcon{
+        margin-right:4vw;
+    }
+}
+
