@@ -8,8 +8,8 @@
     height: fit-content;
     width: 250px;
     z-index: 999;
-    background-color: #EDF0F5;
-    backdrop-filter: blur(10px);
+    background-color: #ffffff47;
+    backdrop-filter: blur(8px);
     box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
@@ -585,7 +585,7 @@
 .contactOptionWrapper {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: fit-content;
 }
 
 .contactOptionDiv {
@@ -644,6 +644,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+   
 }
 
 .main {
