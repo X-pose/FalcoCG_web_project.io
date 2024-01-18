@@ -8,7 +8,7 @@
     height: fit-content;
     width: 250px;
     z-index: 999;
-    background-color: #ffffff47;
+    background-color: #fffdfd89;
     backdrop-filter: blur(8px);
     box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -42,11 +42,11 @@
     text-decoration: none;
     padding: 8px 15px;
     background-color: transparent;
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
-   
+    width: 100%;
     letter-spacing: 0;
     line-height: normal;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -80,7 +80,7 @@
 
 .headerLeftDiv h1 {
     display: inline;
-    color: #121315;
+    color: #212121;
     font-family: "Pacifico", cursive;
     font-size: 36px;
     font-weight: 600;
@@ -124,7 +124,7 @@
     text-decoration: none;
     padding: 8px 15px;
     background-color: transparent;
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -156,7 +156,7 @@
     display: flex;
     
     height: fit-content;
-    background-color: #EDF0F5;
+    background-color: #EBEBEB;
     padding-top: 90px;
 
 }
@@ -177,7 +177,7 @@
 
 
     height: fit-content;
-    background-color: #EDF0F5;
+    background-color: #EBEBEB;
     padding-top: 50px;
 }
 
@@ -218,7 +218,7 @@
     width: 100vw;
     z-index: 1;
     height: fit-content;
-    background-color: #EDF0F5;
+    background-color: #EBEBEB;
 }
 
 .ContactContainer {
@@ -251,7 +251,7 @@
 }
 
 .homeTitle h2 {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -262,7 +262,7 @@
 }
 
 .homeTitle h6 {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -332,7 +332,7 @@
     align-items: center;
     width: 480px;
 
-    background-color: #f2f2f2;
+    background-color: #e0e0e0;
     box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
     height: 200px;
     left: 0;
@@ -341,7 +341,7 @@
 }
 
 .carouselInfoDiv p {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 600;
@@ -355,15 +355,15 @@
 
 .carouselInfoDiv a button {
     border: 1px solid;
-    border-color: #121315;
+    border-color: #212121;
     border-radius: 20px;
     height: 66px;
     left: 0;
 
     top: 0;
     width: 341px;
-
-    color: #121315;
+    background-color: #212121;
+    color: #ffffff;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -373,6 +373,9 @@
     background-color: #e2e0e0;
 }
 
+.carouselInfoDiv a button:hover {
+    color: #212121;
+}
 /*Feedback styles starts here*/
 .feedbackPage {
     display: grid;
@@ -398,7 +401,7 @@
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
-    color: #121315;
+    color: #212121;
     text-align: center;
     font-family:'Roboto', sans-serif;
     font-size: 48px;
@@ -414,7 +417,7 @@
     margin-top: 5px;
     justify-content: center;
     align-items: center;
-    color: #121315;
+    color: #212121;
     text-align: center;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
@@ -439,7 +442,7 @@
 }
 
 .feedbackFormDiv label {
-    color: #121315;
+    color: #212121;
 
     font-family: Inter;
     font-size: 24px;
@@ -477,7 +480,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
 
-    color: #121315;
+    color: #212121;
     text-align: center;
     font-family: Inter;
     font-size: 24px;
@@ -519,7 +522,7 @@
 }
 
 .aboutFalcoTitle h2 {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 600;
@@ -532,7 +535,7 @@
 }
 
 .AboutPara {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -559,7 +562,7 @@
 .ServiceBox {
     background-color: #ffffff;
     border: 3px solid;
-    border-color: #121315;
+    border-color: #212121;
     border-radius: 24px;
     box-shadow: 0px 4px 4px #454545;
     width: 200px;
@@ -602,7 +605,7 @@
 .optionRow {
     background-color: #ffffff;
     border: 2px solid;
-    border-color: #121315;
+    border-color: #212121;
     border-radius: 24px;
     height: fit-content;
     left: 0;
@@ -626,7 +629,7 @@
 }
 
 .optionRow p {
-    color: #121315;
+    color: #212121;
     font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
@@ -656,7 +659,7 @@ body {
     min-height: 400px;
     display: flex;
     flex-direction: column;
-    background-color: #121315;
+    background-color: #212121;
 }
 
 .upperFooter {
@@ -824,7 +827,7 @@ hr {
     }
 
     .optionRow p {
-        color: #121315;
+        color: #212121;
         font-family:'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 600;
