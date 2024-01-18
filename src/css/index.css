@@ -43,7 +43,7 @@
     padding: 8px 15px;
     background-color: transparent;
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
    
@@ -81,8 +81,8 @@
 .headerLeftDiv h1 {
     display: inline;
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
-    font-size: 48px;
+    font-family: "Pacifico", cursive;
+    font-size: 36px;
     font-weight: 600;
     height: 58px;
     left: 0;
@@ -125,7 +125,7 @@
     padding: 8px 15px;
     background-color: transparent;
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
     height: 58px;
@@ -252,7 +252,7 @@
 
 .homeTitle h2 {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 600;
     left: 0;
@@ -263,7 +263,7 @@
 
 .homeTitle h6 {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
     margin-top: 0px;
@@ -342,7 +342,7 @@
 
 .carouselInfoDiv p {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 28px;
     font-weight: 600;
 
@@ -364,7 +364,7 @@
     width: 341px;
 
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
 }
@@ -400,7 +400,7 @@
     align-items: center;
     color: #121315;
     text-align: center;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 600;
@@ -416,7 +416,7 @@
     align-items: center;
     color: #121315;
     text-align: center;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-style: normal;
     font-weight: 200;
@@ -520,7 +520,7 @@
 
 .aboutFalcoTitle h2 {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 600;
     margin-top: 30px;
@@ -533,7 +533,7 @@
 
 .AboutPara {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
     height: fit-content;
@@ -571,7 +571,7 @@
     justify-content: center;
     align-items: center;
 
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 600;
 
@@ -627,7 +627,7 @@
 
 .optionRow p {
     color: #121315;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 24px;
     font-weight: 600;
 
@@ -691,7 +691,7 @@ body {
 
 .leftUpper h1 {
     color: #EDF0F5;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 48px;
     font-weight: 600;
     height: 58px;
@@ -708,7 +708,7 @@ body {
 
 .leftLower p {
     color: #EDF0F5;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
     left: 0;
@@ -727,7 +727,7 @@ body {
 
 .middle h3 {
     color: #EDF0F5;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 600;
     height: 58px;
@@ -756,7 +756,7 @@ body {
 
     display: flex;
     color: #EDF0F5;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
     height: 23px;
@@ -775,7 +775,7 @@ body {
 
 .right h3 {
     color: #EDF0F5;
-    font-family: "Inter-SemiBold", Helvetica;
+    font-family:'Roboto', sans-serif;
     font-size: 32px;
     font-weight: 600;
     height: 58px;
@@ -825,7 +825,7 @@ hr {
 
     .optionRow p {
         color: #121315;
-        font-family: "Inter-SemiBold", Helvetica;
+        font-family:'Roboto', sans-serif;
         font-size: 16px;
         font-weight: 600;
 
