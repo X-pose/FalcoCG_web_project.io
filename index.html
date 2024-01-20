@@ -13,7 +13,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="icon" href="./src/img/icons/favicon.ico" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" type="text/javascript"></script>
-
+  <script src="./src/js/sideBarLogic.js" type="text/javascript"></script>
   <script src="https://kit.fontawesome.com/3e3421ad4b.js" type="text/javascript" crossorigin="anonymous"></script>
 </head>
 
@@ -140,7 +140,7 @@
           </div>
           <div class="formContainer">
             <div class="feedbackFormDiv">
-              <form action="submit_feedback.php" method="post" class="form">
+              <form action="./src/php/submit_feedback.php" method="post" class="form">
                 <div class="textField">
                   <label for="name">Your Name:</label>
                   <br />
@@ -228,24 +228,6 @@
       </div>
     </section>
 
-    <script>
-      function openSideBar() {
-        const menuItem = document.getElementsByClassName('MenuIcon')[0];
-        menuItem.style.display = 'none';
-    
-        const sideBar = document.getElementsByClassName('SideBar')[0];
-        sideBar.style.display = 'flex';
-      }
-    
-      function closeSideBar() {
-        const menuItem = document.getElementsByClassName('MenuIcon')[0];
-        menuItem.style.display = 'flex';
-    
-        const sideBar = document.getElementsByClassName('SideBar')[0];
-        sideBar.style.display = 'none';
-      }
-    </script>
-    
     <script>
       particlesJS("particles-js", {
         particles: {
