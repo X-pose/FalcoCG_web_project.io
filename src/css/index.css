@@ -171,7 +171,7 @@
   display: flex;
 
   height: fit-content;
-  background-color: #ebebeb;
+  background-color: #edf0f5;
   padding-top: 90px;
 }
 
@@ -189,7 +189,7 @@
   width: 100vw;
 
   height: fit-content;
-  background-color: #ebebeb;
+  background-color: #edf0f5;
   padding-top: 50px;
 }
 
@@ -227,7 +227,7 @@
   width: 100vw;
   z-index: 1;
   height: fit-content;
-  background-color: #ebebeb;
+  background-color: #edf0f5;
 }
 
 .ContactContainer {
@@ -480,6 +480,11 @@
   line-height: normal;
 }
 
+.submitBtnDiv :hover{
+    background-color: #212121;
+    color: #edf0f5;
+}
+
 .submitBtnDiv {
   display: flex;
   justify-content: center;
@@ -522,7 +527,7 @@
   color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 200;
   height: fit-content;
   left: 0;
   letter-spacing: 0;
