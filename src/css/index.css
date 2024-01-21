@@ -1,1090 +1,1040 @@
 /* ---- particles.js container ---- */
+#response-message {
+  width: 50vw;
+  position: absolute;
+  padding: 10px;
+  color: #212121;
+  font-size: 4vw;
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.form {
+  display: block;
+}
+#response-message svg {
+  fill: #00b31e;
+  margin: 10px;
+  display: flex;
+    justify-content: center;
+    width: 95%;
+}
+#response-message span{
+    display: flex;
+    justify-content: center;
+}
 
 .SideBar {
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: fit-content;
-    width: 250px;
-    z-index: 999;
-    background-color: #fffdfd89;
-    backdrop-filter: blur(8px);
-    box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    list-style: none;
-    border-radius: 20px;
-    
-
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: fit-content;
+  width: 250px;
+  z-index: 999;
+  background-color: #fffdfd89;
+  backdrop-filter: blur(8px);
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style: none;
+  border-radius: 20px;
 }
 
-.MenuIcon{
-    display: none;
-   
-   align-self: center;
-   margin-right:4vw;
+.MenuIcon {
+  display: none;
+
+  align-self: center;
+  margin-right: 4vw;
 }
-.SideBar li{
-    width: 100%;
-    height: 50px;
-   
-    border-bottom: 1px solid #dddcdc;
-    display: flex;
-    align-items: center;
-    
-   
+.SideBar li {
+  width: 100%;
+  height: 50px;
+
+  border-bottom: 1px solid #dddcdc;
+  display: flex;
+  align-items: center;
 }
 
-.SideBar li a{
-    text-decoration: none;
-    padding: 8px 15px;
-    background-color: transparent;
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 18px;
-    font-weight: 600;
-    width: 100%;
-    letter-spacing: 0;
-    line-height: normal;
-    transition: color 0.3s ease, transform 0.3s ease;
+.SideBar li a {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .headerMain {
-    display: flex;
-    width: 100vw;
-    height: 90px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    justify-content: space-between;
-    /* Updated to space the children */
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  width: 100vw;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  /* Updated to space the children */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .headerLeftDiv {
-    height: 90px;
-    display: flex;
-    align-items: center;
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 
 .logoImage {
-    display: inline;
-    width: 75px;
-    height: 75px;
-    margin-left: 30px;
+  display: inline;
+  width: 75px;
+  height: 75px;
+  margin-left: 30px;
 }
 
 .headerLeftDiv h1 {
-    display: inline;
-    color: #212121;
-    font-family: "Pacifico", cursive;
-    font-size: 36px;
-    font-weight: 600;
-    height: 58px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 25px;
+  display: inline;
+  color: #212121;
+  font-family: "Pacifico", cursive;
+  font-size: 36px;
+  font-weight: 600;
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 25px;
 }
 
-.headerRightNav{
-    display: block;
+.headerRightNav {
+  display: block;
 }
 
 .headerRightDiv {
-    display: flex;
-    align-items: center;
-    margin-right: 2vw;
-    width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+  width: fit-content;
 }
 
 .headerRightDiv nav {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 .headerRightDiv nav ul {
-    list-style: none;
-    display: flex;
-    /* Add this line to allow justify-content to work */
-    justify-content: flex-end;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  display: flex;
+  /* Add this line to allow justify-content to work */
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
 }
 
 .headerRightDiv nav li {
-    display: inline;
-    margin-right: 15px;
+  display: inline;
+  margin-right: 15px;
 }
 
 .headerRightDiv nav a {
-    text-decoration: none;
-    padding: 8px 15px;
-    background-color: transparent;
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    height: 58px;
-    letter-spacing: 0;
-    line-height: normal;
-    transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  height: 58px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .headerRightDiv nav a:hover {
-    color: #f5c905;
-    transform: translateX(5px);
-    border-bottom: 2px solid #f5c905;
+  color: #f5c905;
+  transform: translateX(5px);
+  border-bottom: 2px solid #f5c905;
 }
 
-
 .HomeSectionDiv {
-    width: 100vw;
-   
-    height: fit-content;
+  width: 100vw;
 
-
+  height: fit-content;
 }
 
 #Home {
+  width: 100vw;
+  display: flex;
 
-
-    width: 100vw;
-    display: flex;
-    
-    height: fit-content;
-    background-color: #EBEBEB;
-    padding-top: 90px;
-
+  height: fit-content;
+  background-color: #ebebeb;
+  padding-top: 90px;
 }
 
 #About {
-    width: 100vw;
-    padding-bottom: 25vw;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #EDF0F5;
+  width: 100vw;
+  padding-bottom: 25vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #edf0f5;
 }
 
 #Feedback {
+  width: 100vw;
 
-    width: 100vw;
-
-
-    height: fit-content;
-    background-color: #EBEBEB;
-    padding-top: 50px;
+  height: fit-content;
+  background-color: #ebebeb;
+  padding-top: 50px;
 }
 
 #Services {
-    display: flex;
-    width: 100vw;
+  display: flex;
+  width: 100vw;
 
-
-    height: fit-content;
-    padding-top: 100px;
-    background-color: #EDF0F5;
-    align-items: center;
-    flex-direction: column;
+  height: fit-content;
+  padding-top: 100px;
+  background-color: #edf0f5;
+  align-items: center;
+  flex-direction: column;
 }
 
 #particles-js {
-    display: flex;
-    width: 100vw;
-    position: absolute;
-    z-index: 0;
-
+  display: flex;
+  width: 100vw;
+  position: absolute;
+  z-index: 0;
 }
 
 #particles-js2 {
-    display: flex;
-    width: 100vw;
+  display: flex;
+  width: 100vw;
 }
 
 #particles-js3 {
-    display: flex;
-    width: 100vw;
-    justify-content: center;
-    position: absolute;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  position: absolute;
 }
 
 #Contact {
-
-    width: 100vw;
-    z-index: 1;
-    height: fit-content;
-    background-color: #EBEBEB;
+  width: 100vw;
+  z-index: 1;
+  height: fit-content;
+  background-color: #ebebeb;
 }
 
 .ContactContainer {
-    display: flex;
-    position: absolute;
+  display: flex;
+  position: absolute;
 
-    height: fit-content;
-    padding-top: 100px;
-    align-items: center;
-    flex-direction: column;
-
-
+  height: fit-content;
+  padding-top: 100px;
+  align-items: center;
+  flex-direction: column;
 }
 
 .carousel-container {
-    width: 100vw;
-
-
+  width: 100vw;
 }
 
 .homeTitle {
+  width: 100vw;
 
-    width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-
-    align-items: center;
+  align-items: center;
 }
 
 .homeTitle h2 {
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    left: 0;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  left: 0;
 
-    letter-spacing: 0;
-    margin-bottom: 10px;
+  letter-spacing: 0;
+  margin-bottom: 10px;
 }
 
 .homeTitle h6 {
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 0px;
-    left: 0;
-    margin-bottom: 0px;
-    letter-spacing: 0;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0px;
+  left: 0;
+  margin-bottom: 0px;
+  letter-spacing: 0;
 }
 
-
 .carousel {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  flex-direction: row;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  align-items: center;
+  margin-top: 0px;
 
-
-    height: fit-content;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    flex-direction: row;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    align-items: center;
-    margin-top: 0px;
-
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-
-
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .carouselItem {
-    display: grid;
-    position: relative;
-    grid-template-rows: 70% 30%;
-    align-items: center;
-    margin-bottom: 20px;
-    margin-top: -50px;
-    z-index: 1;
-    transform: scale(0.6);
+  display: grid;
+  position: relative;
+  grid-template-rows: 70% 30%;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: -50px;
+  z-index: 1;
+  transform: scale(0.6);
 }
 
 .carouselImgDiv {
-    width: 100%;
-    height: 100%;
-    grid-row: 1;
-    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
+  width: 100%;
+  height: 100%;
+  grid-row: 1;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
 }
 
 .itemImg {
-    width: 480px;
-    height: 480px;
-    object-fit: cover;
-    overflow: hidden;
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .carouselInfoDiv {
-    width: 100%;
-    height: 100%;
-    grid-row: 2;
+  width: 100%;
+  height: 100%;
+  grid-row: 2;
 }
 
 .carouselInfoDiv div {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 480px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 480px;
 
-    background-color: #e0e0e0;
-    box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
-    height: 200px;
-    left: 0;
+  background-color: #e0e0e0;
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
+  height: 200px;
+  left: 0;
 
-    top: 0;
+  top: 0;
 }
 
 .carouselInfoDiv p {
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 600;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
 
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
 }
-
-
 
 .carouselInfoDiv a button {
-    border: 1px solid;
-    border-color: #212121;
-    border-radius: 20px;
-    height: 66px;
-    left: 0;
+  border: 1px solid;
+  border-color: #212121;
+  border-radius: 20px;
+  height: 66px;
+  left: 0;
 
-    top: 0;
-    width: 341px;
-    background-color: #212121;
-    color: #ffffff;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
+  top: 0;
+  width: 341px;
+  background-color: #212121;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .carouselInfoDiv a button:hover {
-    background-color: #e2e0e0;
+  background-color: #e2e0e0;
 }
 
 .carouselInfoDiv a button:hover {
-    color: #212121;
+  color: #212121;
 }
 /*Feedback styles starts here*/
 .feedbackPage {
-    display: grid;
+  display: grid;
 
-    width: 100vw;
-    height: 100%;
-    grid-template-rows: 25% 75%;
-
+  width: 100vw;
+  height: 100%;
+  grid-template-rows: 25% 75%;
 }
 
 .feedbackTitle {
-    width: 100vw;
-    height: 100%;
-    margin-top: 50px;
-    margin-bottom: 10px;
+  width: 100vw;
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
 }
 
 .feedbackTitle h2 {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    justify-content: center;
-    align-items: center;
-    color: #212121;
-    text-align: center;
-    font-family:'Roboto', sans-serif;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .feedbackTitle h3 {
-
-    display: flex;
-    margin-top: 5px;
-    justify-content: center;
-    align-items: center;
-    color: #212121;
-    text-align: center;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  align-items: center;
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
 }
 
 .feedbackFormDiv {
-
-    width: 50vw;
-    padding: 10px;
-    transform: scale(0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 64px;
-    margin-top: 10px;
-    border: 3px solid #454545;
-    background: #fff;
-    box-shadow: 0px 4px 21.7px 0px rgba(0, 0, 0, 0.24);
+  width: 50vw;
+  padding: 10px;
+  transform: scale(0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 64px;
+  margin-top: 10px;
+  border: 3px solid #454545;
+  background: #fff;
+  box-shadow: 0px 4px 21.7px 0px rgba(0, 0, 0, 0.24);
 }
 
 .feedbackFormDiv label {
-    color: #212121;
+  color: #212121;
 
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .inputStyle {
-    border-radius: 10px;
-    border: 1px solid #454545;
-    background: #FFFEFE;
-    height: 50px;
+  border-radius: 10px;
+  border: 1px solid #454545;
+  background: #fffefe;
+  height: 50px;
 }
 
 .textField {
-    width: 45vw;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 30px;
-    justify-content: left;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  justify-content: left;
 }
 
 .textField label {
-
-    display: block;
+  display: block;
 }
 
 .submitBtn {
-    width: 200px;
-    height: 50px;
-    border-radius: 26px;
-    border: 3px solid #454545;
-    background: rgba(255, 255, 255, 0.00);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  width: 200px;
+  height: 50px;
+  border-radius: 26px;
+  border: 3px solid #454545;
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
-
-    color: #212121;
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  color: #212121;
+  text-align: center;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
 .submitBtnDiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .formContainer {
-    display: flex;
-    height: 600px;
-    justify-content: center;
+  display: flex;
+  height: 600px;
+  justify-content: center;
 }
-
-
-
-
-
 
 /*About CSS starts here*/
 
 .LogoMain img {
-    display: block;
-    width: 250px;
-    height: 250px;
-    margin-top: 100px;
-    margin-bottom: 20px;
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 
 .aboutFalcoTitle {
-    width: fit-content;
-    height: fit-content;
-
+  width: fit-content;
+  height: fit-content;
 }
 
 .aboutFalcoTitle h2 {
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 .AboutPara {
-    color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    height: fit-content;
-    left: 0;
-    letter-spacing: 0;
-    line-height: 29.1px;
-    margin-left: 100px;
-    margin-right: 100px;
-
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  height: fit-content;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29.1px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 /*Service CSS starts here*/
 
 .ServicesFlexBox {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75vw;
-    height: fit-content;
-    justify-content: center;
-
+  display: flex;
+  flex-wrap: wrap;
+  width: 75vw;
+  height: fit-content;
+  justify-content: center;
 }
 
 .ServiceBox {
-    background-color: #ffffff;
-    border: 3px solid;
-    border-color: #212121;
-    border-radius: 24px;
-    box-shadow: 0px 4px 4px #454545;
-    width: 200px;
-    height: 200px;
-    left: 0;
-    top: 0;
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: #ffffff;
+  border: 3px solid;
+  border-color: #212121;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px #454545;
+  width: 200px;
+  height: 200px;
+  left: 0;
+  top: 0;
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-family:'Roboto', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
 /* Contact CSS starts here*/
 
 .contactOptionWrapper {
-    display: flex;
-    align-items: center;
-    height: fit-content;
+  display: flex;
+  align-items: center;
+  height: fit-content;
 }
 
 .contactOptionDiv {
-    display: flex;
-    width: 100vw;
-    height: fit-content;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 80px;
-
-
+  display: flex;
+  width: 100vw;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
 }
 
 .optionRow {
-    background-color: #ffffff;
-    border: 2px solid;
-    border-color: #212121;
-    border-radius: 24px;
-    height: fit-content;
-    left: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    top: 0;
-    width: 50vw;
-    padding-left: 30px;
-    margin-top: 25px;
+  background-color: #ffffff;
+  border: 2px solid;
+  border-color: #212121;
+  border-radius: 24px;
+  height: fit-content;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 0;
+  width: 50vw;
+  padding-left: 30px;
+  margin-top: 25px;
 }
 
 .optionRow:hover {
-    background-color: #ececec;
+  background-color: #ececec;
 }
 
 .optionRow img {
-    width: 50px;
-    height: 50px;
-
+  width: 50px;
+  height: 50px;
 }
 
 .optionRow p {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 20px;
+}
+
+/* Footer CSS starts here*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+}
+
+.footerContainer {
+  width: 100vw;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: #212121;
+}
+
+.upperFooter {
+  margin-top: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.left {
+  display: grid;
+  max-width: 50vw;
+  width: 40%;
+  height: 100%;
+  grid-template-rows: 40% 60%;
+
+  margin-right: 80px;
+}
+
+.leftUpper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leftUpper h1 {
+  color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  height: 58px;
+  left: 0;
+  margin-left: 10px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.leftLower {
+  height: fit-content;
+}
+
+.leftLower p {
+  color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 23.1px;
+  top: 0;
+}
+
+.middle {
+  margin-right: 80px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.middle h3 {
+  color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+}
+
+.inline_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inline_row img {
+  width: 25px;
+  height: 25px;
+}
+
+.inline_row span {
+  display: flex;
+  color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  height: 23px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 10px;
+  align-items: center;
+}
+
+.right {
+  align-items: right;
+  width: fit-content;
+}
+
+.right h3 {
+  color: #edf0f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+
+  display: flex;
+  align-items: center;
+}
+
+.lowerFooter p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #edf0f5;
+}
+
+hr {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+/*For Tablet*/
+@media only screen and (max-width: 1024px) {
+  .leftLower p {
+    font-size: 0.8em;
+  }
+
+  .optionRow {
+    margin-top: 0.9em;
+  }
+
+  .optionRow img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .optionRow p {
     color: #212121;
-    font-family:'Roboto', sans-serif;
-    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
     font-weight: 600;
 
     left: 0;
     letter-spacing: 0;
     line-height: normal;
     margin-left: 20px;
-}
+  }
 
-/* Footer CSS starts here*/
+  .ServiceBox {
+    border-radius: 24px;
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-   
-}
+    height: 200px;
+    width: 200px;
 
-.main {
-    flex: 1;
-}
+    margin: 40px;
 
-.footerContainer {
-    width: 100vw;
-    min-height: 400px;
-    display: flex;
-    flex-direction: column;
-    background-color: #212121;
-}
-
-.upperFooter {
-    margin-top: 20px;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-
-    padding-left: 80px;
-    padding-right: 80px;
-}
-
-.left {
-    display: grid;
-    max-width: 50vw;
-    width: 40%;
-    height: 100%;
-    grid-template-rows: 40% 60%;
-
-    margin-right: 80px;
-
-}
-
-.leftUpper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-.leftUpper h1 {
-    color: #EDF0F5;
-    font-family:'Roboto', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    height: 58px;
-    left: 0;
-    margin-left: 10px;
-    letter-spacing: 0;
-    line-height: normal;
-
-}
-
-.leftLower{
-    height: fit-content;
-}
-
-.leftLower p {
-    color: #EDF0F5;
-    font-family:'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 600;
+
     left: 0;
     letter-spacing: 0;
-    line-height: 23.1px;
-    top: 0;
+    line-height: normal;
+    transform: scale(1.2);
+  }
 
-}
+  .ServicesFlexBox {
+    margin-top: -50px;
+    transform: scale(0.8);
+  }
 
+  .headerRightDiv {
+  }
 
-.middle {
-    margin-right: 80px;
-    width: fit-content;
-    height: fit-content;
-}
+  .headerRightDiv nav {
+  }
 
-.middle h3 {
-    color: #EDF0F5;
-    font-family:'Roboto', sans-serif;
-    font-size: 32px;
+  .headerRightDiv nav ul {
+  }
+
+  .headerRightDiv nav li {
+  }
+
+  .headerRightDiv nav a {
+    padding: 8px 15px;
+    /* Add padding to links for better spacing */
+
+    font-size: 20px;
     font-weight: 600;
     height: 58px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
+  }
 
-    display: flex;
-    align-items: center;
-}
+  .MenuIcon {
+    display: none;
+  }
 
-.inline_row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px;
-
-}
-
-.inline_row img {
-    width: 25px;
-    height: 25px;
-}
-
-.inline_row span {
-
-    display: flex;
-    color: #EDF0F5;
-    font-family:'Roboto', sans-serif;
-    font-size: 16px;
-    font-weight: 600;
-    height: 23px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-    margin-left: 10px;
-    align-items: center;
-}
-
-.right {
-
-    align-items: right;
-    width: fit-content;
-}
-
-.right h3 {
-    color: #EDF0F5;
-    font-family:'Roboto', sans-serif;
-    font-size: 32px;
-    font-weight: 600;
-    height: 58px;
-    left: 0;
-    letter-spacing: 0;
-    line-height: normal;
-
-    display: flex;
-    align-items: center;
-}
-
-.lowerFooter p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #EDF0F5;
-}
-
-hr {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-/*For Tablet*/
-@media only screen and (max-width: 1024px) {
-    .leftLower p {
-        font-size: 0.8em;
-    }
-
-
-
-
-
-
-    .optionRow {
-
-        margin-top: 0.9em;
-    }
-
-
-
-    .optionRow img {
-        width: 25px;
-        height: 25px;
-
-    }
-
-    .optionRow p {
-        color: #212121;
-        font-family:'Roboto', sans-serif;
-        font-size: 16px;
-        font-weight: 600;
-
-        left: 0;
-        letter-spacing: 0;
-        line-height: normal;
-        margin-left: 20px;
-    }
-
-    .ServiceBox {
-
-        border-radius: 24px;
-
-        height: 200px;
-        width: 200px;
-
-        margin: 40px;
-
-        font-size: 16px;
-        font-weight: 600;
-
-        left: 0;
-        letter-spacing: 0;
-        line-height: normal;
-        transform: scale(1.2);
-    }
-
-    .ServicesFlexBox {
-        margin-top: -50px;
-        transform: scale(0.8);
-    }
-
-
-    .headerRightDiv {}
-
-    .headerRightDiv nav {}
-
-    .headerRightDiv nav ul {}
-
-    .headerRightDiv nav li {}
-
-    .headerRightDiv nav a {
-
-        padding: 8px 15px;
-        /* Add padding to links for better spacing */
-
-        font-size: 20px;
-        font-weight: 600;
-        height: 58px;
-
-    }
-
-    .MenuIcon{
-        display: none;
-    }
-
-    .SideBar{
-        display: none;
-    }
-    
-
+  .SideBar {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 924px) {
+  .MenuIcon {
+    display: flex;
+  }
 
-    .MenuIcon{
-        display: flex;
-    }
-    
-    .headerRightNav{
-        display: none;
-    }
+  .headerRightNav {
+    display: none;
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px){
-
-    .feedbackFormDiv {
-        width: 80vw;
-        display: flex;
-        justify-content: center;
-    }
-    .textField{
-        width: 80%;
-    }
-    .form{
-        width: 100%;
-       display: flex;
-       flex-direction: column;
-       align-items: center;
-    }
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .feedbackFormDiv {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+  }
+  .textField {
+    width: 80%;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-@media only screen and (max-width: 767px){
-    .logoImage{
-        width: 50px;
-        height: 50px;
-    }
+@media only screen and (max-width: 767px) {
+  .logoImage {
+    width: 50px;
+    height: 50px;
+  }
 
-    
-    .headerLeftDiv h1{
-        display: flex;
-        font-size: 7vw;
-        margin-top: 0;
-        margin-bottom: 0;
-        align-items: center;
-    }
+  .headerLeftDiv h1 {
+    display: flex;
+    font-size: 7vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+  }
 
-    .homeTitle h2{
-        margin-top: 12vw;
-        font-size: 6vw;
-        font-weight: 900;
-        display: flex;
-        justify-content: center;
-    }
+  .homeTitle h2 {
+    margin-top: 12vw;
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
 
-    .homeTitle h6{
-       
-        font-size: 6vw;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-    }
-    .carouselItem {
-        transform: scale(60%);
-    }
+  .homeTitle h6 {
+    font-size: 6vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+  .carouselItem {
+    transform: scale(60%);
+  }
 
-    .LogoMain img {
-        display: block;
-        width: 50vw;
-        height: 50vw;
-        margin-top: 14vw;
-        margin-bottom: 1vw;
-    }
-    .aboutFalcoTitle h2{
-        font-size: 10vw;
-    }
+  .LogoMain img {
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    margin-top: 14vw;
+    margin-bottom: 1vw;
+  }
+  .aboutFalcoTitle h2 {
+    font-size: 10vw;
+  }
 
-    .AboutPara{
-        font-size: 4vw;
-        height: fit-content;
-        margin-left: 4vw;
-        margin-right: 4vw;
-    }
+  .AboutPara {
+    font-size: 4vw;
+    height: fit-content;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
 
-    .feedbackTitle h2{
-        font-size: 6vw;
-        font-weight: 900;
-        display: flex;
-        justify-content: center;
-    }
+  .feedbackTitle h2 {
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
 
-    .feedbackTitle h3{
-        font-size: 3.5vw;
-        font-weight: 600;
-        display: flex;
-        justify-content: center;
-    }
+  .feedbackTitle h3 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
 
-    .feedbackFormDiv{
-        width: 90vw;
-    }
-    .form{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .textField{
-        width: 80%;
-        display: flex;
-        justify-content: center;
-    }
-    .aboutFalcoTitle h2{
-        font-size: 6vw;
-        font-weight: 900;
-        display: flex;
-        justify-content: center;
-    }
+  .feedbackFormDiv {
+    width: 90vw;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textField {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutFalcoTitle h2 {
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
 
-    .ServicesFlexBox{
-        width: 90vw;
-    }
-    .contactOptionDiv a{
-        width: 80vw;
-    }
-    .optionRow{
-        width:auto;
+  .ServicesFlexBox {
+    width: 90vw;
+  }
+  .contactOptionDiv a {
+    width: 80vw;
+  }
+  .optionRow {
+    width: auto;
+  }
 
-    }
+  .left {
+    display: flex;
 
-    .left{
-        display: flex;
-       
-        flex-direction: column;
-        margin-right: 3vw;
-        width: 90vw;
-    }
-    .leftUpper{
-        display: flex;
-        width: 90vw;
-        height: fit-content;
-        flex-direction: row;
-    }
+    flex-direction: column;
+    margin-right: 3vw;
+    width: 90vw;
+  }
+  .leftUpper {
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    flex-direction: row;
+  }
 
-    .leftUpper h1{
-        font-size: 10vw;
-        display: flex;
-        align-items: center;
-    }
-    .leftUpper img{
-        margin-left: 3vw;
-    }
+  .leftUpper h1 {
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+  }
+  .leftUpper img {
+    margin-left: 3vw;
+  }
 
-    .upperFooter{
-        padding-left:3vw;
-        padding-right: 3vw;
-    }
-    .leftLower{
-        width: 90vw;
-    }
+  .upperFooter {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .leftLower {
+    width: 90vw;
+  }
 
-    .middle a{
-        width: fit-content;
-    }
-    
+  .middle a {
+    width: fit-content;
+  }
 }
 
-@media only screen and (max-width: 284px){
+@media only screen and (max-width: 284px) {
+  .inline_row img {
+    width: 5vw;
+    height: 5vw;
+  }
+  .inline_row span {
+    font-size: 5vw;
+  }
 
-    .inline_row img{
-        width: 5vw;
-        height: 5vw;
-    }
-    .inline_row span{
-        font-size: 5vw;
-    }
+  .lowerFooter hr {
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
 
-    .lowerFooter hr{
-        margin-left: 6vw;
-        margin-right: 6vw;
-    }
+  .lowerFooter p {
+    font-size: 6vw;
+  }
 
-    .lowerFooter p {
-        font-size: 6vw;
-    }
+  .middle h3 {
+    font-size: 12vw;
+  }
 
-    .middle h3{
-        font-size: 12vw;
-    }
+  .right h3 {
+    font-size: 12vw;
+  }
 
-    .right h3{
-        font-size: 12vw;
-    }
-
-    .MenuIcon{
-        margin-right:4vw;
-    }
+  .MenuIcon {
+    margin-right: 4vw;
+  }
 }
-
