@@ -1,4 +1,8 @@
 /* ---- particles.js container ---- */
+html{
+  scroll-behavior: smooth;
+  
+}
 #response-message {
   width: 50vw;
   position: absolute;
@@ -136,28 +140,45 @@
 }
 
 .headerRightDiv nav li {
-  display: inline;
+  display: inline-block;
   margin-right: 15px;
+  pointer-events: fill;
+  padding-bottom:2px;
+  background-image: linear-gradient(#f5c905 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+.headerRightDiv nav li:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
 }
 
 .headerRightDiv nav a {
+  
   text-decoration: none;
   padding: 8px 15px;
   background-color: transparent;
   color: #212121;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1.5vw;
   font-weight: 600;
   height: 58px;
   letter-spacing: 0;
   line-height: normal;
   transition: color 0.3s ease, transform 0.3s ease;
+
 }
 
+
 .headerRightDiv nav a:hover {
+  width: 100%;
   color: #f5c905;
   transform: translateX(5px);
-  border-bottom: 2px solid #f5c905;
+
 }
 
 .HomeSectionDiv {
@@ -267,9 +288,9 @@
 
 .homeTitle h6 {
   color: #212121;
-  font-family: "Roboto", sans-serif;
+  font-family: "Pacifico", cursive;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 100;
   margin-top: 0px;
   left: 0;
   margin-bottom: 0px;
@@ -286,7 +307,7 @@
   overflow-y: hidden;
   align-items: center;
   margin-top: 0px;
-
+  padding-top: 4vh;
   left: 0;
   right: 0;
   margin-left: auto;
@@ -301,7 +322,12 @@
   margin-bottom: 20px;
   margin-top: -50px;
   z-index: 1;
-  transform: scale(0.6);
+  transform: scale(0.85);
+ 
+}
+
+.carouselItem :hover{
+  
 }
 
 .carouselImgDiv {
@@ -312,8 +338,8 @@
 }
 
 .itemImg {
-  width: 480px;
-  height: 480px;
+  width: 25vw;
+  height: 25vw;
   object-fit: cover;
   overflow: hidden;
 }
@@ -329,11 +355,11 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 480px;
+  width: 25vw;
 
   background-color: #e0e0e0;
   box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.349);
-  height: 200px;
+  height: 10vw;
   left: 0;
 
   top: 0;
@@ -342,9 +368,10 @@
 .carouselInfoDiv p {
   color: #212121;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
+  font-size: 1.8vw;
   font-weight: 600;
-
+  margin-bottom: 1vw;
+  margin-top: 0.7vw;
   left: 0;
   letter-spacing: 0;
   line-height: normal;
@@ -354,20 +381,24 @@
   border: 1px solid;
   border-color: #212121;
   border-radius: 20px;
-  height: 66px;
+  height: fit-content;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   left: 0;
 
   top: 0;
-  width: 341px;
+  width: 15vw;
   background-color: #212121;
   color: #ffffff;
   font-family: "Roboto", sans-serif;
-  font-size: 24px;
+  font-size: 1.2vw;
   font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
 }
 
 .carouselInfoDiv a button:hover {
-  background-color: #e2e0e0;
+  background-color: #ffffff;
+  transform: scale(1.1);
 }
 
 .carouselInfoDiv a button:hover {
@@ -492,7 +523,7 @@
 
 .formContainer {
   display: flex;
-  height: 600px;
+  height: 500px;
   justify-content: center;
 }
 
@@ -825,23 +856,13 @@ hr {
     transform: scale(0.8);
   }
 
-  .headerRightDiv {
-  }
-
-  .headerRightDiv nav {
-  }
-
-  .headerRightDiv nav ul {
-  }
-
-  .headerRightDiv nav li {
-  }
+ 
 
   .headerRightDiv nav a {
     padding: 8px 15px;
     /* Add padding to links for better spacing */
 
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
     height: 58px;
   }
@@ -880,6 +901,46 @@ hr {
     flex-direction: column;
     align-items: center;
   }
+
+  
+.itemImg {
+  width: 50vw;
+  height: 50vw;
+
+}
+
+
+.carouselInfoDiv div {
+  
+  width: 50vw;
+  height: 20vw;
+justify-content: flex-start;
+
+}
+
+.carouselInfoDiv p {
+ 
+  font-size: 3vw;
+ padding-top: 0;
+  margin-bottom: 3vw;
+  margin-top: 5vw;
+  
+}
+.carouselInfoDiv{
+  
+}
+
+.carouselInfoDiv a button {
+ 
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
+  
+  width: 25vw;
+ 
+  font-size: 2.5vw;
+  
+}
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1010,6 +1071,44 @@ hr {
 
   .middle a {
     width: fit-content;
+  }
+
+  .itemImg {
+    width: 90vw;
+    height: 90vw;
+  
+  }
+  
+  
+  .carouselInfoDiv div {
+    
+    width: 90vw;
+    height: 30vw;
+  justify-content: flex-start;
+  
+  }
+  
+  .carouselInfoDiv p {
+   
+    font-size: 6vw;
+   padding-top: 0;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+    
+  }
+  .carouselInfoDiv{
+    
+  }
+  
+  .carouselInfoDiv a button {
+   
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    
+    width: 55vw;
+   
+    font-size: 5vw;
+    
   }
 }
 
