@@ -1,4 +1,7 @@
 /* ---- particles.js container ---- */
+html{
+    scroll-behavior: smooth;
+}
 #response-message {
   width: 50vw;
   position: absolute;
@@ -277,6 +280,7 @@
 }
 
 .carousel {
+  width: 100vw;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
@@ -291,6 +295,7 @@
   right: 0;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 .carouselItem {
