@@ -2,6 +2,9 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+  place-items: center;
+}
 #response-message {
   width: 50vw;
   position: absolute;
