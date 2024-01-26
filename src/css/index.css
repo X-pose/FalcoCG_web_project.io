@@ -1,7 +1,9 @@
 /* ---- particles.js container ---- */
 html{
-  scroll-behavior: smooth;
-  
+    scroll-behavior: smooth;
+}
+body{
+  place-items: center;
 }
 #response-message {
   width: 50vw;
@@ -298,6 +300,7 @@ html{
 }
 
 .carousel {
+  width: 100vw;
   height: fit-content;
   display: flex;
   flex-wrap: wrap;
@@ -312,6 +315,7 @@ html{
   right: 0;
   margin-left: auto;
   margin-right: auto;
+ 
 }
 
 .carouselItem {
