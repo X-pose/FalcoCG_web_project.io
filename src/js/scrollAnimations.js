@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     element.style.transition = 'all 1s ';
                 }
             }
-
+            /*
             if (element.classList.contains('LogoMain')) {
 
                
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     element.style.transition = 'all 1s ';
                 }
             }
-
+            */
             if (element.classList.contains('ServiceBox')) {
 
                 const delay = 0.2; // Adjust the delay value as needed
