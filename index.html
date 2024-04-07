@@ -24,6 +24,8 @@
   <script src="./src/js/homeHeightScript.js" type="text/javascript" defer></script>
   <script src="./src/js/sideBarLogic.js" type="text/javascript"></script>
   <script src="./src/js/formAftermath.js"></script>
+  <script src = "./src/js/bannerTxt.js"></script>
+  <script src = "./src/js/wordGenAnim.js"></script>
 
   <!-- Imported JavaScript scripts-->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" type="text/javascript"></script>
@@ -69,6 +71,25 @@
     </ul>
   </header>
   <main class="main">
+    <section id="section_1">
+      <div class="banner_text" id = "banner_txt_1">
+
+       <span id = "spanDesign" data-value="Designed">Designed</span>  <br> for <br><span id = "spanPerf" data-value="performance">performance </span> <br>
+
+      </div>
+      <div class="banner_text" id ="banner_txt_2">
+
+        <span id = "spanTexture" data-value="Textured">Textured</span> <br> for <br><span  id = "spanElegence" data-value="elegence">elegence</span>
+
+      </div>
+      <div class="swiper" id="bannerCls">
+        <div class="swiper-wrapper">
+          <img src="./src/img/productImg/Military Helmet.jpeg" alt="Item 2" class="swiper-slide" loading="lazy" />
+          <img src="./src/img/productImg/AWM Sniper Rifle.jpeg" alt="Item 2" class="swiper-slide" loading="lazy" />
+          <img src="./src/img/productImg/Fighter Pilot Helmet.jpeg" alt="Item 2" class="swiper-slide" loading="lazy" />
+        </div>
+      </div>
+    </section>
     <section id="Home">
       <div id="HomeSectionDiv" class="HomeSectionDiv">
         <div class="homeTitle">
@@ -86,9 +107,10 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
 
-              <div class="swiper-slide" id="carouselItem" >
+              <div class="swiper-slide" id="carouselItem">
                 <div class="carouselImgDiv">
-                  <img src="./src/img/productImg/Fighter Pilot Helmet.jpeg" alt="Item 1" class="itemImg" loading="lazy"/>
+                  <img src="./src/img/productImg/Fighter Pilot Helmet.jpeg" alt="Item 1" class="itemImg"
+                    loading="lazy" />
                 </div>
 
                 <div class="carouselInfoDiv">
@@ -102,9 +124,9 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" id="carouselItem" >
+              <div class="swiper-slide" id="carouselItem">
                 <div class="carouselImgDiv">
-                  <img src="./src/img/productImg/Military Helmet.jpeg" alt="Item 2" class="itemImg" loading="lazy"/>
+                  <img src="./src/img/productImg/Military Helmet.jpeg" alt="Item 2" class="itemImg" loading="lazy" />
                 </div>
 
                 <div class="carouselInfoDiv">
@@ -117,7 +139,7 @@
                 </div>
               </div>
 
-              <div class="swiper-slide" id="carouselItem" >
+              <div class="swiper-slide" id="carouselItem">
                 <div class="carouselImgDiv">
                   <img src="./src/img/productImg/AWM Sniper Rifle.jpeg" alt="Item 3" class="itemImg" loading="lazy" />
                 </div>
@@ -137,13 +159,13 @@
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
 
-            
-
-           
 
 
-          <!-- Add more items as needed -->
-        </div>
+
+
+
+            <!-- Add more items as needed -->
+          </div>
     </section>
     <section id="About">
       <div class="LogoMain">
@@ -358,189 +380,21 @@
       };
       requestAnimationFrame(update);
     </script>
-    <script>
-      particlesJS("particles-js2", {
-        particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: "#f5c905" },
-          shape: {
-            type: "circle",
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 5 },
-            image: { src: "img/github.svg", width: 100, height: 100 },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#f5c905",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: { enable: false, rotateX: 600, rotateY: 1200 },
-          },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: { enable: true, mode: "repulse" },
-            onclick: { enable: true, mode: "push" },
-            resize: true,
-          },
-          modes: {
-            grab: { distance: 400, line_linked: { opacity: 1 } },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
-            },
-            repulse: { distance: 200, duration: 0.4 },
-            push: { particles_nb: 4 },
-            remove: { particles_nb: 2 },
-          },
-        },
-        retina_detect: true,
-      });
-      var count_particles, stats, update;
-      stats = new Stats();
-      stats.setMode(0);
-      stats.domElement.style.position = "absolute";
-      stats.domElement.style.left = "0px";
-      stats.domElement.style.top = "0px";
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector(".js-count-particles");
-      update = function () {
-        stats.begin();
-        stats.end();
-        if (
-          window.pJSDom[0].pJS.particles &&
-          window.pJSDom[0].pJS.particles.array
-        ) {
-          count_particles.innerText =
-            window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
 
-    <script>
-      particlesJS("particles-js3", {
-        particles: {
-          number: { value: 80, density: { enable: true, value_area: 800 } },
-          color: { value: "#f5c905" },
-          shape: {
-            type: "circle",
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 5 },
-            image: { src: "img/github.svg", width: 100, height: 100 },
-          },
-          opacity: {
-            value: 0.5,
-            random: false,
-            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-          },
-          size: {
-            value: 3,
-            random: true,
-            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-          },
-          line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#f5c905",
-            opacity: 0.4,
-            width: 1,
-          },
-          move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: true,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: { enable: false, rotateX: 600, rotateY: 1200 },
-          },
-        },
-        interactivity: {
-          detect_on: "window",
-          events: {
-            onhover: { enable: true, mode: "repulse" },
-            onclick: { enable: true, mode: "push" },
-            resize: true,
-          },
-          modes: {
-            grab: { distance: 400, line_linked: { opacity: 1 } },
-            bubble: {
-              distance: 400,
-              size: 40,
-              duration: 2,
-              opacity: 8,
-              speed: 3,
-            },
-            repulse: { distance: 200, duration: 0.4 },
-            push: { particles_nb: 4 },
-            remove: { particles_nb: 2 },
-          },
-        },
-        retina_detect: true,
-      });
-      var count_particles, stats, update;
-      stats = new Stats();
-      stats.setMode(0);
-      stats.domElement.style.position = "absolute";
-      stats.domElement.style.left = "0px";
-      stats.domElement.style.top = "0px";
-      document.body.appendChild(stats.domElement);
-      count_particles = document.querySelector(".js-count-particles");
-      update = function () {
-        stats.begin();
-        stats.end();
-        if (
-          window.pJSDom[0].pJS.particles &&
-          window.pJSDom[0].pJS.particles.array
-        ) {
-          count_particles.innerText =
-            window.pJSDom[0].pJS.particles.array.length;
-        }
-        requestAnimationFrame(update);
-      };
-      requestAnimationFrame(update);
-    </script>
     <script>
       const swiper = new Swiper('.swiper', {
         // Optional parameters
-        effect: 'coverflow',
-        coverflowEffect : {
-          depth : 800,
-          slideShadows : false,
+        effect: 'fade',
+        coverflowEffect: {
+          depth: 200,
+          slideShadows: false,
         },
-        
-       autoplay: {
-         delay : 4000,
-         disableOnInteraction : true,
-         pauseOnMouseEnter : false,
-       },
+
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: false,
+        },
         // If we need pagination
         pagination: {
           el: '.swiper-pagination',

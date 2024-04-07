@@ -5,6 +5,30 @@ html{
 body{
   place-items: center;
 }
+
+/*Section_1 css*/
+#bannerCls{
+  height: calc(100vh - 90px);
+  margin-top: 90px;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.banner_text{
+  position: absolute;
+ 
+  z-index: 999;
+  color: #dddcdc;
+  top: 50%;
+  margin-left: 20px;
+  font-size: 5rem;
+  justify-content: center;
+}
+
+
+
 #response-message {
   width: 50vw;
   position: absolute;
