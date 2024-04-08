@@ -1,76 +1,110 @@
 /* ---- particles.js container ---- */
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
+body {
   place-items: center;
 }
 
-/*Section_1 css*/
-#bannerCls{
-  height: calc(100vh - 90px);
-  margin-top: 90px;
-  width: 100vw;
-  position: relative;
+/*Header css*/
+
+.headerMain {
   display: flex;
-  justify-content: center;
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+  /* Updated to space the children */
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.banner_text{
-  position: absolute;
- 
-  z-index: 999;
-  color: #dddcdc;
-  top: 50%;
-  margin-left: 20px;
-  font-size: 5rem;
-  justify-content: center;
+.headerLeftDiv {
+  height: 60px;
+  display: flex;
+  align-items: center;
 }
 
+.logoImage {
+  display: inline;
+  width: 60px;
+  height: 60px;
+  margin-left: 30px;
+}
 
-
-#response-message {
-  width: 50vw;
-  position: absolute;
-  padding: 10px;
+.headerLeftDiv h1 {
+  display: inline;
   color: #212121;
-  font-size: 4vw;
-  display: none;
-  font-family: "Roboto", sans-serif;
+  font-family: "Pacifico", cursive;
+  font-size: 30px;
   font-weight: 600;
-}
-.swiper {
-  width: 90vw;
-  height: fit-content;
-  padding-top: 100px;
-  .swiper-slide{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: scale(0.85);
-   
-  }
+  height: 58px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  margin-left: 25px;
 }
 
-.swiper-button-next{
-  color: #212121;
-}
-
-
-
-.form {
+.headerRightNav {
   display: block;
 }
-#response-message svg {
-  fill: #00b31e;
-  margin: 10px;
+
+.headerRightDiv {
   display: flex;
-    justify-content: center;
-    width: 95%;
+  align-items: center;
+  margin-right: 2vw;
+  width: fit-content;
 }
-#response-message span{
-    display: flex;
-    justify-content: center;
+
+.headerRightDiv nav {
+  margin-left: auto;
+}
+
+.headerRightDiv nav ul {
+  list-style: none;
+  display: flex;
+  /* Add this line to allow justify-content to work */
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.headerRightDiv nav li {
+  display: inline-block;
+  margin-right: 15px;
+  pointer-events: fill;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#f5c905 0 0);
+  background-position: 0 100%; /*OR bottom left*/
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+.headerRightDiv nav li:hover {
+  background-position: 100% 100%; /*OR bottom right*/
+  background-size: 100% 2px;
+}
+
+.headerRightDiv nav a {
+  text-decoration: none;
+  padding: 8px 15px;
+  background-color: transparent;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  height: 58px;
+  letter-spacing: 0;
+  line-height: normal;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headerRightDiv nav a:hover {
+  width: 100%;
+  color: #f5c905;
+  transform: translateX(5px);
 }
 
 .SideBar {
@@ -120,109 +154,286 @@ body{
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.headerMain {
-  display: flex;
+/*Section_1 css*/
+#section_1 {
+  height: fit-content;
   width: 100vw;
-  height: 90px;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  justify-content: space-between;
-  /* Updated to space the children */
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.headerLeftDiv {
-  height: 90px;
+#bannerCls {
+  height: calc(100vh - 60px);
+  margin-top: 60px;
+  width: 100vw;
+  position: relative;
   display: flex;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+#bannerCls video{
+  max-width: 100%;
+  max-height: 100%;
+  transform: scale(1.3);
+
+ 
+}
+
+.banner_text {
+  position: absolute;
+
+  z-index: 999;
+  color: #dddcdc;
+  top: 50%;
+  margin-left: 60px;
+  font-size: 5rem;
+  justify-content: center;
+}
+
+/*Section_2 css*/
+#section_2 {
+  height: calc(100vh - 60px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.homeTitle {
+  width: 100vw;
+
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+
   align-items: center;
 }
 
-.logoImage {
-  display: inline;
-  width: 75px;
-  height: 75px;
-  margin-left: 30px;
+.homeTitle h3 {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  left: 0;
+  margin-top: 10vh;
+  letter-spacing: 0;
+  margin-bottom: 5px;
 }
 
-.headerLeftDiv h1 {
-  display: inline;
+.homeTitle h6 {
   color: #212121;
   font-family: "Pacifico", cursive;
-  font-size: 36px;
+  font-size: 24px;
+  font-weight: 100;
+  margin-top: 0px;
+  left: 0;
+  margin-bottom: 0px;
+  letter-spacing: 0;
+}
+
+.swiper{
+  position: relative;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  content: "" !important;
+}
+
+#productCont {
+
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 10vh;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+
+#productItem {
+  display: grid;
+  grid-template-rows: 66% 33%;
+  height: fit-content;
+  width: fit-content;
+  margin: 30px;
+}
+
+#productItem a{
+  text-decoration: none; 
+  color: inherit;
+}
+
+.PIImg {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.PIImg img{
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.PIImg Img:hover{
+  transform: scale(1);
+}
+
+.PIDesc {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.PIDesc p {
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
   font-weight: 600;
-  height: 58px;
+  margin-bottom: 1vw;
+  margin-top: 1.8vw;
   left: 0;
   letter-spacing: 0;
   line-height: normal;
-  margin-left: 25px;
 }
 
-.headerRightNav {
+.PIDesc button {
+  
+
+  border-radius: 10px;
+  height: fit-content;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  left: 0;
+
+  top: 0;
+  width: 10vw;
+  background-color: #212121;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.PIDesc button:hover {
+  background-color: #ffffff;
+  transform: scale(1.1);
+}
+
+.PIDesc button:hover {
+  color: #212121;
+}
+
+/*section_3 css*/
+#section_3 {
+  height: 100vh;
+  width: 100vw;
+
+}
+
+#sec3Div{
+  margin-left: 40px;
+  margin-right: 40PX;
+  margin-top: 60px;
+  display: flex;
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+ 
+}
+
+.aboutImg {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutImg img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.aboutTxtDiv {
+  color: #212121;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 200;
+  height: fit-content;
+  width: 50vw;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 29.1px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#response-message {
+  width: 50vw;
+  position: absolute;
+  padding: 10px;
+  color: #212121;
+  font-size: 4vw;
+  display: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+.swiper {
+  width: 90vw;
+  height: fit-content;
+  padding-top: 100px;
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.85);
+  }
+}
+
+.swiper-button-next {
+  color: #212121;
+}
+
+.form {
   display: block;
 }
-
-.headerRightDiv {
+#response-message svg {
+  fill: #00b31e;
+  margin: 10px;
   display: flex;
-  align-items: center;
-  margin-right: 2vw;
-  width: fit-content;
+  justify-content: center;
+  width: 95%;
 }
-
-.headerRightDiv nav {
-  margin-left: auto;
-}
-
-.headerRightDiv nav ul {
-  list-style: none;
+#response-message span {
   display: flex;
-  /* Add this line to allow justify-content to work */
-  justify-content: flex-end;
-  padding: 0;
-  margin: 0;
-}
-
-.headerRightDiv nav li {
-  display: inline-block;
-  margin-right: 15px;
-  pointer-events: fill;
-  padding-bottom:2px;
-  background-image: linear-gradient(#f5c905 0 0);
-  background-position: 0 100%; /*OR bottom left*/
-  background-size: 0% 2px;
-  background-repeat: no-repeat;
-  transition:
-    background-size 0.3s,
-    background-position 0s 0.3s;
-}
-.headerRightDiv nav li:hover {
-  background-position: 100% 100%; /*OR bottom right*/
-  background-size: 100% 2px;
-}
-
-.headerRightDiv nav a {
-  
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: transparent;
-  color: #212121;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5vw;
-  font-weight: 600;
-  height: 58px;
-  letter-spacing: 0;
-  line-height: normal;
-  transition: color 0.3s ease, transform 0.3s ease;
-
-}
-
-
-.headerRightDiv nav a:hover {
-  width: 100%;
-  color: #f5c905;
-  transform: translateX(5px);
-
+  justify-content: center;
 }
 
 .HomeSectionDiv {
@@ -309,38 +520,6 @@ body{
   width: 100vw;
 }
 
-.homeTitle {
-  width: 100vw;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-
-  align-items: center;
-}
-
-.homeTitle h2 {
-  color: #212121;
-  font-family: "Roboto", sans-serif;
-  font-size: 48px;
-  font-weight: 600;
-  left: 0;
-
-  letter-spacing: 0;
-  margin-bottom: 10px;
-}
-
-.homeTitle h6 {
-  color: #212121;
-  font-family: "Pacifico", cursive;
-  font-size: 24px;
-  font-weight: 100;
-  margin-top: 0px;
-  left: 0;
-  margin-bottom: 0px;
-  letter-spacing: 0;
-}
-
 .carousel {
   width: 100vw;
   height: fit-content;
@@ -357,7 +536,6 @@ body{
   right: 0;
   margin-left: auto;
   margin-right: auto;
- 
 }
 
 #carouselItem {
@@ -368,12 +546,10 @@ body{
   margin-bottom: 20px;
   margin-top: -50px;
   z-index: 1;
-  transform: scale(0.90) !important;
- 
+  transform: scale(0.9) !important;
 }
 
-.carouselItem :hover{
-  
+.carouselItem :hover {
 }
 
 .carouselImgDiv {
@@ -557,9 +733,9 @@ body{
   line-height: normal;
 }
 
-.submitBtnDiv :hover{
-    background-color: #212121;
-    color: #edf0f5;
+.submitBtnDiv :hover {
+  background-color: #212121;
+  color: #edf0f5;
 }
 
 .submitBtnDiv {
@@ -574,14 +750,6 @@ body{
 }
 
 /*About CSS starts here*/
-
-.LogoMain img {
-  display: block;
-  width: 250px;
-  height: 250px;
-  margin-top: 100px;
-  margin-bottom: 20px;
-}
 
 .aboutFalcoTitle {
   width: fit-content;
@@ -598,19 +766,6 @@ body{
   left: 0;
   letter-spacing: 0;
   line-height: normal;
-}
-
-.AboutPara {
-  color: #212121;
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
-  font-weight: 200;
-  height: fit-content;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 29.1px;
-  margin-left: 100px;
-  margin-right: 100px;
 }
 
 /*Service CSS starts here*/
@@ -902,8 +1057,6 @@ hr {
     transform: scale(0.8);
   }
 
- 
-
   .headerRightDiv nav a {
     padding: 8px 15px;
     /* Add padding to links for better spacing */
@@ -948,45 +1101,34 @@ hr {
     align-items: center;
   }
 
-  
-.itemImg {
-  width: 50vw;
-  height: 50vw;
+  .itemImg {
+    width: 50vw;
+    height: 50vw;
+  }
 
-}
+  .carouselInfoDiv div {
+    width: 50vw;
+    height: 20vw;
+    justify-content: flex-start;
+  }
 
+  .carouselInfoDiv p {
+    font-size: 3vw;
+    padding-top: 0;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+  }
+  .carouselInfoDiv {
+  }
 
-.carouselInfoDiv div {
-  
-  width: 50vw;
-  height: 20vw;
-justify-content: flex-start;
+  .carouselInfoDiv a button {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
 
-}
+    width: 25vw;
 
-.carouselInfoDiv p {
- 
-  font-size: 3vw;
- padding-top: 0;
-  margin-bottom: 3vw;
-  margin-top: 5vw;
-  
-}
-.carouselInfoDiv{
-  
-}
-
-.carouselInfoDiv a button {
- 
-  padding-top: 1.5vw;
-  padding-bottom: 1.5vw;
-  
-  width: 25vw;
- 
-  font-size: 2.5vw;
-  
-}
-
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1122,39 +1264,30 @@ justify-content: flex-start;
   .itemImg {
     width: 90vw;
     height: 90vw;
-  
   }
-  
-  
+
   .carouselInfoDiv div {
-    
     width: 90vw;
     height: 30vw;
-  justify-content: flex-start;
-  
+    justify-content: flex-start;
   }
-  
+
   .carouselInfoDiv p {
-   
     font-size: 6vw;
-   padding-top: 0;
+    padding-top: 0;
     margin-bottom: 3vw;
     margin-top: 5vw;
-    
   }
-  .carouselInfoDiv{
-    
+  .carouselInfoDiv {
   }
-  
+
   .carouselInfoDiv a button {
-   
     padding-top: 1.5vw;
     padding-bottom: 1.5vw;
-    
+
     width: 55vw;
-   
+
     font-size: 5vw;
-    
   }
 }
 
