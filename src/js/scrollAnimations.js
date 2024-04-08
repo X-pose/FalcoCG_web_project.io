@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //Each of these if blocks can be used to style relevent elements
            
 
-
+            /*
             if (element.classList.contains('AboutPara')) {
 
                
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     element.style.transition = 'all 1s ';
                 }
             }
-            /*
+           
             if (element.classList.contains('LogoMain')) {
 
                
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
 
-
+            /*
             if (element.classList.contains('carouselItem')) {
 
                 const delay = 0.2; // Adjust the delay value as needed
@@ -88,9 +88,28 @@ document.addEventListener('DOMContentLoaded', function () {
                     element.style.transition = `all 2s ${index * delay}s`; // Apply delay
                 }
             }
-
+*/
 
             if (element.classList.contains('optionRow')) {
+
+                const delay = 0.2; // Adjust the delay value as needed
+
+                if (entry.isIntersecting) {
+                    console.log("intersecting now");
+                    element.style.opacity = '1';
+                    element.style.filter = 'blur(0)';
+                    element.style.transform = 'translateX(0)';
+                    element.style.transition = `all 2s ease ${index * delay}s`; // Apply delay
+                } else {
+                    console.log("Not intersecting now");
+                    element.style.opacity = '0';
+                    element.style.filter = 'blur(5px)';
+                    element.style.transform = 'translateX(-100%)';
+                    element.style.transition = `all 2s ${index * delay}s`; // Apply delay
+                }
+            }
+
+            if (element.classList.contains('swiper-slide')) {
 
                 const delay = 0.2; // Adjust the delay value as needed
 
@@ -112,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }); // Adjust the threshold as needed
 
-    const Section2 = document.querySelectorAll('.Sec2Head, .AboutPara, .ServiceBox, .LogoMain, .carouselItem, .optionRow'); //Add your class names or ID names as parameters
+    const Section2 = document.querySelectorAll('.Sec2Head, .AboutPara, .ServiceBox, .LogoMain, .carouselItem, .optionRow, .swiper-slide'); //Add your class names or ID names as parameters
    
     Section2.forEach(element => {
         observer.observe(element);
