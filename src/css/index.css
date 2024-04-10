@@ -157,6 +157,7 @@ body {
 /*Section_1 css*/
 #section_1 {
   height: fit-content;
+  min-height: 100vh;
   width: 100vw;
 }
 
@@ -193,7 +194,8 @@ body {
 
 /*Section_2 css*/
 #section_2 {
-  height: calc(100vh - 60px);
+  height: fit-content;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -206,7 +208,7 @@ body {
   width: calc(100vw - 80px) !important;
   margin-left: 40px !important; /* Automatically adjust left margin */
   margin-right: 40px !important;
-  
+  margin-top: 40px !important;
 }
 
 .swiper-wrapper{
@@ -384,9 +386,12 @@ body {
 
 /*section_3 css*/
 #section_3 {
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   width: 100vw;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sec3Div{
@@ -394,7 +399,8 @@ body {
   margin-right: 40PX;
   margin-top: 60px;
   display: flex;
-  height: inherit;
+  flex-wrap: wrap;
+  height: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -402,19 +408,19 @@ body {
 }
 
 .aboutImg {
-  width: 50vw;
+  width: 40vw;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40vw;
+ 
 }
 
 
 .aboutImg img {
   display: block;
-  width: 250px;
-  height: 250px;
-  margin-top: 100px;
-  margin-bottom: 20px;
+  width: 15vw;
+  height: 15vw;
  scale: 0.1;
  opacity: 0;
  animation: anim-logo linear forwards;
@@ -434,25 +440,27 @@ animation-range: entry 0% 22vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  
   height: fit-content;
-  width: 50vw;
+  width: 40vw;
   left: 0;
   letter-spacing: 0;
   line-height: 29.1px;
   margin-left: 100px;
   margin-right: 100px;
 
-  font-size: 1.2rem;
+  font-size: 2vw;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight:400;
   font-style: normal;
+
+  
 }
 
-/*section 4 css*/
+/*section_4 css*/
 #section_4{
-  height: 100vh;
+   height: fit-content;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -485,7 +493,7 @@ animation-range: entry 0% 22vw;
   height: 100%;
   background-size: 103%;
   background-position: center;
-  background-image: url("../img/BWSila3.png");
+  background-image: url("../img/siteResources/BWSila3.png");
   mix-blend-mode: screen;
 }
 
@@ -517,7 +525,8 @@ animation-range: entry 0% 22vw;
 
 .feedbackFormDiv {
   width: 50vw;
-  padding: 10px;
+  height: 100%;
+  padding: 50px;
   transform: scale(0.8);
   display: flex;
   justify-content: center;
@@ -525,7 +534,7 @@ animation-range: entry 0% 22vw;
   border-radius: 64px;
   margin-top: 10px;
   /*border: 3px solid #454545;*/
-  background: transparent;
+  background: rgba(255, 255, 255, 0.481);
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 21.7px 0px rgba(0, 0, 0, 0.24);
 }
@@ -534,7 +543,7 @@ animation-range: entry 0% 22vw;
   color: #212121;
 
   font-family: Inter;
-  font-size: 24px;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -569,7 +578,7 @@ animation-range: entry 0% 22vw;
   justify-content: center;
 }
 
-/*section_4 css*/
+/*section_5 css*/
 
 #section_5{
   height: 100vh;
@@ -616,12 +625,20 @@ animation-range: entry 0% 22vw;
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/productImg/Fighter\ Pilot\ Helmet.jpeg");
+  background-image: url("../img/siteResources/ModelingBack.jpg");
   transform: translateX(-100%);
   animation: sec5Anim 2s linear forwards;
   animation-timeline: view();
   animation-range: entry 0% 34vw;
+
 }
+
+.sec5Div1 h3{
+  background-color: rgba(255, 255, 255, 0.893);
+  color: #000000;
+  padding: 10px;
+}
+
 
 
 
@@ -645,8 +662,14 @@ animation-range: entry 0% 22vw;
   animation: sec5Anim 2s linear forwards;
   animation-timeline: view();
   animation-range: entry 0% 32vw;
+  position: relative;
 }
 
+.sec5Div2 h3{
+  background-color: rgba(255, 255, 255, 0.893);
+  color: #000000;
+  padding: 10px;
+}
 
 .sec5Div3{
   width:20vw;
@@ -663,11 +686,18 @@ animation-range: entry 0% 22vw;
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/productImg/Coffe_maker.jpg");
+  background-image: url("../img/siteResources/UVBack.jpg");
   transform: translateX(-100%);
   animation: sec5Anim 2s linear forwards;
   animation-timeline: view();
   animation-range: entry 0% 30vw;
+
+}
+
+.sec5Div3 h3{
+  background-color: rgba(255, 255, 255, 0.893);
+  color: #000000;
+  padding: 10px;
 }
 
 
@@ -687,13 +717,20 @@ animation-range: entry 0% 22vw;
   align-items: center;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/productImg/Scifi_helm.jpg");
+
+  background-image: url("../img/siteResources/OptimizeBack.jpg") ;
   transform: translateX(-100%);
   animation: sec5Anim 2s linear forwards;
   animation-timeline: view();
   animation-range: entry 0% 28vw;
+
 }
 
+.sec5Div4 h3{
+  background-color: rgba(255, 255, 255, 0.893);
+  color: #000000;
+  padding: 10px;
+}
 
 @keyframes sec5Anim {
   to{transform: translateX(0%);}
@@ -702,9 +739,11 @@ animation-range: entry 0% 22vw;
 
 /*section_6 css*/
 #section_6{
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   width: 100vw;
   display: flex;
+  
   justify-content: center;
   align-items: center;
   flex-direction: column;
