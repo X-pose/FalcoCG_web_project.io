@@ -31,7 +31,7 @@ body {
   display: inline;
   width: 60px;
   height: 60px;
-  margin-left: 30px;
+  margin-left: 5vw;
 }
 
 .headerLeftDiv h1 {
@@ -54,7 +54,7 @@ body {
 .headerRightDiv {
   display: flex;
   align-items: center;
-  
+  margin-right: 5vw;
   width: fit-content;
 }
 
@@ -62,7 +62,7 @@ body {
   margin-left: auto;
 }
 
-.headerRightDiv nav ul {
+.headerRightDiv ul {
   list-style: none;
   display: flex;
   /* Add this line to allow justify-content to work */
@@ -71,40 +71,56 @@ body {
   margin: 0;
 }
 
-.headerRightDiv nav li {
-  display: inline-block;
-  margin-right: 15px;
+.headerRightDiv li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 120px;
+  height: fit-content;
   pointer-events: fill;
   padding-bottom: 2px;
+  
+  
+}
+
+
+.headerRightDiv a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  color: #212121;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+
+  height: fit-content;
+  letter-spacing: 0;
+  line-height: normal;
+ 
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.headerRightDiv span{
+  width: fit-content;
+  height: fit-content;
   background-image: linear-gradient(#f5c905 0 0);
   background-position: 0 100%; /*OR bottom left*/
   background-size: 0% 2px;
   background-repeat: no-repeat;
   transition: background-size 0.3s, background-position 0s 0.3s;
 }
-.headerRightDiv nav li:hover {
+
+.headerRightDiv span:hover{
   background-position: 100% 100%; /*OR bottom right*/
   background-size: 100% 2px;
 }
 
-.headerRightDiv nav a {
-  text-decoration: none;
-  padding: 8px 15px;
-  background-color: transparent;
-  color: #212121;
-  font-family: "Roboto", sans-serif;
-  font-size: 1.5vw;
-  font-weight: 600;
-  height: 58px;
-  letter-spacing: 0;
-  line-height: normal;
-  transition: color 0.3s ease, transform 0.3s ease;
-}
+.headerRightDiv a:hover {
 
-.headerRightDiv nav a:hover {
-  width: 100%;
   color: #f5c905;
-  transform: translateX(5px);
+  transform: translateX(0px);
+
 }
 
 .SideBar {
@@ -157,12 +173,11 @@ body {
 /*Section_1 css*/
 #section_1 {
   height: fit-content;
-  min-height: 100vh;
   width: 100vw;
 }
 
 #bannerCls {
-  height: calc(100vh - 60px);
+  height: calc(fit-content - 60px);
   margin-top: 60px;
   width: 100vw;
   position: relative;
@@ -186,9 +201,11 @@ body {
 
   z-index: 999;
   color: #dddcdc;
-  top: 50%;
-  margin-left: 60px;
-  font-size: 5rem;
+  left: 0;
+  bottom: 0;
+  margin-left: 5vw;
+  margin-bottom: 5vw;
+  font-size: 6vw;
   justify-content: center;
 }
 
@@ -205,28 +222,32 @@ body {
 .swiper{
 
   position: relative;
-  width: calc(100vw - 80px) !important;
-  margin-left: 40px !important; /* Automatically adjust left margin */
-  margin-right: 40px !important;
+  width: calc(100vw - 10vw) !important;
+  margin-left: 5vw !important; /* Automatically adjust left margin */
+  margin-right: 5vw !important;
   margin-top: 40px !important;
+
+ 
 }
 
 .swiper-wrapper{
-  width: 100% !important;
+  width: fit-content !important;
   position: relative !important;
-  margin-left: 40px !important;
-  margin-right: 40px !important;
-  margin-top: 10vh !important;
+
+  margin-top: 15vh !important;
   height: fit-content !important;
   display: flex !important;
+  justify-content: space-between !important;
   flex-direction: row !important;
+  align-items:first baseline !important;
+ 
 }
 
 .homeTitle {
   width: 100vw;
 
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
 
   align-items: center;
@@ -258,6 +279,7 @@ body {
 .swiper-button-next,
 .swiper-button-prev {
   position: absolute;
+  margin: 10px;
   z-index: 999;
   top: 50%;
   transform: translateY(-50%);
@@ -291,7 +313,7 @@ body {
   grid-template-rows: 66% 33% !important;
   height: fit-content !important;
   width: fit-content !important;
-  margin: 30px !important;
+
 }
 
 .swiper-slide a{
@@ -316,7 +338,7 @@ body {
 }
 
 .PIImg Img:hover{
-  transform: scale(1);
+  transform: scale(1.2);
 }
 
 .PIDesc {
@@ -335,7 +357,7 @@ body {
 .PIDesc p {
   color: #212121;
   font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.25vw;
   font-weight: 600;
   margin-bottom: 0.5vw;
   margin-top: 1.8vw;
@@ -444,7 +466,7 @@ animation-range: entry 0% 22vw;
   width: 40vw;
   left: 0;
   letter-spacing: 0;
-  line-height: 29.1px;
+  line-height: 2vw;
   margin-left: 100px;
   margin-right: 100px;
 
@@ -1368,6 +1390,9 @@ hr {
 
 /*For Tablet*/
 @media only screen and (max-width: 1024px) {
+  .PIDesc p{
+    font-size: 1.8vw;
+  }
   .leftLower p {
     font-size: 0.8em;
   }
@@ -1415,14 +1440,7 @@ hr {
     transform: scale(0.8);
   }
 
-  .headerRightDiv nav a {
-    padding: 8px 15px;
-    /* Add padding to links for better spacing */
-
-    font-size: 1.5vw;
-    font-weight: 600;
-    height: 58px;
-  }
+  
 
   .MenuIcon {
     display: none;
@@ -1444,6 +1462,9 @@ hr {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .PIDesc p{
+    font-size: 2vw;
+  }
   .feedbackFormDiv {
     width: 80vw;
     display: flex;
@@ -1458,35 +1479,27 @@ hr {
     flex-direction: column;
     align-items: center;
   }
-
-  .itemImg {
-    width: 50vw;
-    height: 50vw;
+  .PIImg {
+    height: 250px;
+    width: 200px;
+  
   }
 
-  .carouselInfoDiv div {
-    width: 50vw;
-    height: 20vw;
-    justify-content: flex-start;
+  .PIDesc {
+    width: 200px;
+    
   }
 
-  .carouselInfoDiv p {
-    font-size: 3vw;
-    padding-top: 0;
-    margin-bottom: 3vw;
-    margin-top: 5vw;
-  }
-  .carouselInfoDiv {
+    
+  .swiper-wrapper{
+   
+    margin-top: 8vh !important;
+    
+   
   }
 
-  .carouselInfoDiv a button {
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
+  
 
-    width: 25vw;
-
-    font-size: 2.5vw;
-  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -1495,30 +1508,48 @@ hr {
     height: 50px;
   }
 
+  .PIImg {
+    height: 200px;
+    width: 150px;
+  
+  }
+  .PIDesc {
+    width: 150px;
+    
+  }
+  .PIDesc p{
+    font-size: 2vw;
+  }
+
   .headerLeftDiv h1 {
     display: flex;
-    font-size: 7vw;
+    font-size: 4vw;
     margin-top: 0;
     margin-bottom: 0;
     align-items: center;
   }
 
-  .homeTitle h2 {
+  .homeTitle h3 {
     margin-top: 12vw;
     font-size: 6vw;
     font-weight: 900;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .homeTitle h6 {
-    font-size: 6vw;
+    font-size: 3vw;
     font-weight: 600;
     display: flex;
     justify-content: center;
   }
-  #carouselItem {
-    transform: scale(60%);
+  
+  .swiper-wrapper{
+   
+    margin-top: 8vh !important;
+    
+   
   }
 
   .LogoMain img {
@@ -1649,7 +1680,37 @@ hr {
   }
 }
 
+@media only screen and (max-width: 540px) {
+  
+  .headerLeftDiv h1 {
+    display: flex;
+    font-size: 5vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2vw;
+    align-items: center;
+  }
+
+  .PIDesc p{
+    font-size: 3vw;
+  }
+  
+}
+
 @media only screen and (max-width: 284px) {
+
+  .headerLeftDiv h1 {
+    display: flex;
+    font-size: 8vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2vw;
+    align-items: center;
+  }
+
+  .PIDesc p{
+    font-size: 4vw;
+  }
   .inline_row img {
     width: 5vw;
     height: 5vw;
