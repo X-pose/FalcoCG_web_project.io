@@ -485,18 +485,20 @@ animation-range: entry 0% 22vw;
   min-height: 100vh;
   width: 100vw;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+
   flex-direction: row;
- 
+  justify-content: center;
 }
+
+
 
 
 .sec4Left{
  display: flex;
  position: relative;
- width:44.5vw;
- margin-left: 5vw;
+ width:50vw;
+
  justify-content: center;
   align-items: center;
 
@@ -504,28 +506,18 @@ animation-range: entry 0% 22vw;
 }
 
 
-.sec4Right{
-  display: flex;
-  width:44.5vw;
-  right: 0;
-  justify-content: center;
-  align-items: center;
-  font-size: 5vw;
-  margin-right: 5vw;
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: bold;
-  text-align:center;
 
-}
 
 .sec4LeftBackImg {
-  position: relative;
+ 
   width: 100%;
-  height: 100%;
+  min-height: 380px;
+  height:60vh;
   background-position: center;
   background-image: url('../img/productImg/Coffe_maker.jpg');
+  background-repeat: no-repeat;
+  
+  
 }
 
 .sec4LeftBackImg::before {
@@ -539,17 +531,19 @@ animation-range: entry 0% 22vw;
   background-position: center;
   background-image: url("../img/siteResources/BWSila3.png");
   mix-blend-mode: screen;
+  object-fit: cover;
+  
 }
 
 
 .sec4Right{
   display: flex;
-  width:44.5vw;
+  width:45vw;
   right: 0;
   justify-content: center;
   align-items: center;
   font-size: 5vw;
-  margin-right: 5vw;
+  margin-right: 70px;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -561,8 +555,7 @@ animation-range: entry 0% 22vw;
 .formContainer {
   display: flex;
   height: fit-content;
-  width: 100%;
-  transform: scale(0.8);
+  width: 90%;
   position: absolute;
   z-index: 999;
   justify-content: center;
@@ -572,6 +565,11 @@ animation-range: entry 0% 22vw;
 .form{
   width: 100%;
   margin: 20px;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .feedbackFormDiv {
@@ -592,7 +590,7 @@ animation-range: entry 0% 22vw;
   color: #212121;
 
   font-family: Inter;
-  font-size: 1.5vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -600,7 +598,8 @@ animation-range: entry 0% 22vw;
 
 .textField {
   width: 100%;
-  height: 6vw;
+  min-height: 70px;
+  height: 5vw;
   display: flex;
   flex-direction: column;
   margin-bottom: 2vw;
@@ -613,7 +612,7 @@ animation-range: entry 0% 22vw;
 
 .submitBtn {
   width: fit-content;
-  height: 50px;
+  height: 5vh;
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 10px;
