@@ -36,6 +36,7 @@
   <script src="https://kit.fontawesome.com/3e3421ad4b.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
 <body>
@@ -239,6 +240,18 @@
 
     <section id="section_4">
       <div class="sec4Left">
+
+        <model-viewer 
+        src="./src/assets/NeilArmstrong.glb" 
+        ar environment-image="" 
+        poster="" 
+        shadow-intensity="1" 
+        camera-controls touch-action="pan-y"></model-viewer>
+
+
+
+
+        <!--
         <div class="sec4LeftBackImg"></div>
         <div class="formContainer">
           <div class="feedbackFormDiv">
@@ -282,10 +295,14 @@
             </div>
           </div>
         </div>
+        -->
       </div>
       
       <div class="sec4Right">
-        <p>"Let us<br />bring your ideas<br />into<br />reality"</p>
+        <span>
+          <p>"Let us<br />bring your ideas<br />into<br />reality"</p>
+      
+        </span>
       </div>
     </section>
 

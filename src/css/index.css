@@ -432,7 +432,7 @@ body {
 }
 
 .aboutImg {
-  width: 40vw;
+  width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -504,7 +504,13 @@ animation-range: entry 0% 22vw;
  justify-content: center;
   align-items: center;
 
-  background-color: #454545;
+  
+}
+
+model-viewer{
+  width:90%;
+  height:calc(100vh - 160px);
+
 }
 
 
@@ -518,7 +524,7 @@ animation-range: entry 0% 22vw;
   background-position: center;
   background-image: url('../img/productImg/Coffe_maker.jpg');
   background-repeat: no-repeat;
-  
+  object-fit:contain
   
 }
 
@@ -533,7 +539,7 @@ animation-range: entry 0% 22vw;
   background-position: center;
   background-image: url("../img/siteResources/BWSila3.png");
   mix-blend-mode: screen;
-  object-fit: cover;
+  object-fit: fill;
   
 }
 
@@ -545,7 +551,8 @@ animation-range: entry 0% 22vw;
   justify-content: center;
   align-items: center;
   font-size: 5vw;
-  margin-right: 70px;
+  margin-left: 35px;
+  margin-right: 35px;
   font-family: "Comfortaa", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -1498,6 +1505,8 @@ hr {
 
   }
 
+  
+
 }
 
 @media only screen and (max-width: 375px){
@@ -1505,6 +1514,7 @@ hr {
   .sec5Div1 h3{
     font-size: 1rem;
   }
+  
 
   
 }
@@ -1629,6 +1639,10 @@ hr {
     height: 50px;
   }
 
+  #section_3{
+    height: fit-content;
+    min-height: fit-content;
+  }
   .PIImg {
     height: 200px;
     width: 150px;
@@ -1816,6 +1830,12 @@ hr {
     font-size: 3vw;
   }
   
+  .sec4LeftBackImg {
+    height: 50px;
+  }
+  .sec4LeftBackImg::before {
+     
+  }
 }
 
 @media only screen and (max-width: 284px) {
@@ -1860,4 +1880,6 @@ hr {
   .MenuIcon {
     margin-right: 4vw;
   }
+
+  
 }
