@@ -1,10 +1,14 @@
 /* ---- particles.js container ---- */
 html {
   scroll-behavior: smooth !important;
+ 
 }
 body {
-  place-items: center;
+  display: flex;
+  justify-content: center;
 }
+
+
 
 /*Header css*/
 
@@ -190,9 +194,9 @@ body {
 }
 
 #bannerCls video{
-  max-width: 100%;
-  max-height: 100%;
-  transform: scale(1.3);
+  width: 100%;
+  height: calc(100vh - 60px);
+  transform: scale(1);
   aspect-ratio: 16/9;
 
  
@@ -675,7 +679,7 @@ model-viewer{
 }
 .sec5Cont{
   height: calc(100% - 200px);
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -873,6 +877,7 @@ model-viewer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   padding: 10px;
   width: 15vw;
   height: 15vw;
@@ -1454,73 +1459,441 @@ hr {
   margin-right: 80px;
 }
 
-@media only screen and (max-width: 425px){
-  #section_2{
-    height: fit-content;
-    min-height : fit-content;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Newly added*/
+@media only screen and (max-width: 380px){
+
+  .sec5Div1 h3{
+    font-size: 2rem;
+  }
+  
+  .sec5Div1, .sec5Div2, .sec5Div3, .sec5Div4 {
+    height: 500px;
+    width: 40px !important;
   }
 
   #section_3{
-    height: fit-content;
-    min-height : fit-content;
+    min-height: fit-content;
+    
+   }
+
+  #section_4{
+    min-height: fit-content;
+    margin-top: 50px;
   }
-  .sec5Div1{
+
+  #section_5{
+    min-height: fit-content;
+  }
   
-    width:15vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
+  #sec3Div{
+    margin:0;
   }
-  .sec5Div2{
-    width:15vw;
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-  .sec5Div3{
-    width:15vw;
-
-    margin-left: 1vw;
-    margin-right: 1vw;
-  }
-  .sec5Div4{
-    width:15vw;
-
-    margin-left: 1vw;
-    margin-right: 1vw;
+  .aboutImg{
+    width: 90vw;
+    height: 200px;
+    margin-bottom: 20px;
   }
 
+  .aboutImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutTxtDiv{
+    width: 90vw;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+  .sec4Left{
+    width: 95vw;
+  }
+  .sec4Right{
+    width: 95vw;
+  }
+
+  .sec4Right p {
+    font-size: 2rem;
+  }
+
+  model-viewer{
+    width: 100vw;
+    height:300px;
+  
+  }
+
+  .contactUs p {
+    font-size: 3rem;
+  }
+
+  .sec5Title span{
+    font-size: 3rem;
+  }
+
+  .homeTitle h3{
+    font-size: 1.5rem !important;
+  }
+  
+  .homeTitle h6{
+    font-size: 1.2rem !important;
+  }
+}
+
+/*Newly added*/
+@media only screen and (max-width: 450px){
+  
+  .sec5Div1 h3{
+    font-size: 2rem;
+  }
+  
+  .sec5Div1, .sec5Div2, .sec5Div3, .sec5Div4 {
+    height: 500px;
+    width: 60px;
+    
+
+  }
+  
   .sec5Cont{
     height: fit-content;
+    
   }
 
-  .contactCont{
+  #section_2{
+    min-height: fit-content;
+  }
+  #section_3{
+    min-height: fit-content;
+    
+   }
+
+  #section_4{
+    min-height: fit-content;
+    margin-top: 50px;
+  }
+
+  #section_5{
+    min-height: fit-content;
+    display: flex;
+  }
+  
+  #sec3Div{
+    margin:0;
+  }
+  .aboutImg{
+    width: 90vw;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  .aboutImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutTxtDiv{
+    width: 90vw;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+  .sec4Left{
+    width: 95vw;
+  }
+  .sec4Right{
+    width: 95vw;
+  }
+
+  .sec4Right p {
+    font-size: 2rem;
+  }
+
+  model-viewer{
+    width: 100vw;
+    height:300px;
+  
+  }
+
+  .contactUs p {
+    font-size: 3rem;
+  }
+
+  .sec5Title span{
+    font-size: 3rem;
+  }
+
+  .homeTitle h3{
+    font-size: 1.5rem !important;
+  }
+  
+  .homeTitle h6{
+    font-size: 1.2rem !important;
+  }
+
+  .optionRow{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+/*Newly added*/
+@media only screen and (max-width: 770px) {
+
+  #section_2{
+    min-height: fit-content;
+  }
+  #section_3{
+    min-height: fit-content;
+    
+   }
+
+  #section_4{
+    min-height: fit-content;
+    margin-top: 50px;
+  }
+
+  #section_5{
+    min-height: fit-content;
+    display: flex;
+  }
+
+  .aboutImg img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .aboutTxtDiv{
+    width: 90vw;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .sec4Left{
+    width: 95vw;
+  }
+  .sec4Right{
+    width: 95vw;
+  }
+
+  .sec4Right p {
+    font-size: 2rem;
+  }
+
+  model-viewer{
+    width: 95vw;
+    height:500px;
+  
+  }
+
+
+
+
+
+  .leftUpper h1{
+    font-size: 3rem !important;
+  }
+
+ 
+  .PIImg {
+    height: 200px;
+    width: 150px;
+  
+  }
+  .PIDesc {
+    width: 150px;
+    
+  }
+  .PIDesc p{
+    font-size: 2vw;
+  }
+
+  .headerLeftDiv h1 {
+    display: flex;
+    font-size: 4vw;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+  }
+
+  .homeTitle h3 {
+    margin-top: 12vw;
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .homeTitle h6 {
+    font-size: 3vw;
+    font-weight: 600;
     display: flex;
     justify-content: center;
   }
-  .optionRow{
-    width: 40vw !important;
-    height: 40vw !important;
+  
+  .swiper-wrapper{
+   
+    margin-top: 8vh !important;
+    
+   
   }
 
-  .optionRow p{
-
+  .LogoMain img {
+    display: block;
+    width: 50vw;
+    height: 50vw;
+    margin-top: 14vw;
+    margin-bottom: 1vw;
+  }
+  .aboutFalcoTitle h2 {
+    font-size: 10vw;
   }
 
-  
-
-}
-
-@media only screen and (max-width: 375px){
-
-  .sec5Div1 h3{
-    font-size: 1rem;
+  .AboutPara {
+    font-size: 4vw;
+    height: fit-content;
+    margin-left: 4vw;
+    margin-right: 4vw;
   }
-  
 
-  
+  .feedbackTitle h2 {
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feedbackTitle h3 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+  .feedbackFormDiv {
+    width: 90vw;
+  }
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .textField {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .aboutFalcoTitle h2 {
+    font-size: 6vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ServicesFlexBox {
+    width: 90vw;
+  }
+  .contactOptionDiv a {
+    width: 80vw;
+  }
+
+
+  .left {
+    display: flex;
+
+    flex-direction: column;
+    margin-right: 3vw;
+    width: 90vw;
+  }
+  .leftUpper {
+    display: flex;
+    width: 90vw;
+    height: fit-content;
+    flex-direction: row;
+  }
+
+  .leftUpper h1 {
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+  }
+  .leftUpper img {
+    margin-left: 3vw;
+  }
+
+  .upperFooter {
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
+  .leftLower {
+    width: 90vw;
+  }
+
+  .middle a {
+    width: fit-content;
+  }
+
+  .itemImg {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .carouselInfoDiv div {
+    width: 90vw;
+    height: 30vw;
+    justify-content: flex-start;
+  }
+
+  .carouselInfoDiv p {
+    font-size: 6vw;
+    padding-top: 0;
+    margin-bottom: 3vw;
+    margin-top: 5vw;
+  }
+ 
+
+  .carouselInfoDiv a button {
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+
+    width: 55vw;
+
+    font-size: 5vw;
+  }
 }
 
 /*For Tablet*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 4096px) {
   .PIDesc p{
     font-size: 1.8vw;
   }
@@ -1633,253 +2006,5 @@ hr {
 
 }
 
-@media only screen and (max-width: 767px) {
-  .logoImage {
-    width: 50px;
-    height: 50px;
-  }
 
-  #section_3{
-    height: fit-content;
-    min-height: fit-content;
-  }
-  .PIImg {
-    height: 200px;
-    width: 150px;
-  
-  }
-  .PIDesc {
-    width: 150px;
-    
-  }
-  .PIDesc p{
-    font-size: 2vw;
-  }
 
-  .headerLeftDiv h1 {
-    display: flex;
-    font-size: 4vw;
-    margin-top: 0;
-    margin-bottom: 0;
-    align-items: center;
-  }
-
-  .homeTitle h3 {
-    margin-top: 12vw;
-    font-size: 6vw;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .homeTitle h6 {
-    font-size: 3vw;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .swiper-wrapper{
-   
-    margin-top: 8vh !important;
-    
-   
-  }
-
-  .LogoMain img {
-    display: block;
-    width: 50vw;
-    height: 50vw;
-    margin-top: 14vw;
-    margin-bottom: 1vw;
-  }
-  .aboutFalcoTitle h2 {
-    font-size: 10vw;
-  }
-
-  .AboutPara {
-    font-size: 4vw;
-    height: fit-content;
-    margin-left: 4vw;
-    margin-right: 4vw;
-  }
-
-  .feedbackTitle h2 {
-    font-size: 6vw;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-  }
-
-  .feedbackTitle h3 {
-    font-size: 3.5vw;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-  }
-
-  .feedbackFormDiv {
-    width: 90vw;
-  }
-  .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .textField {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-  }
-  .aboutFalcoTitle h2 {
-    font-size: 6vw;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-  }
-
-  .ServicesFlexBox {
-    width: 90vw;
-  }
-  .contactOptionDiv a {
-    width: 80vw;
-  }
-  .optionRow {
-    width: auto;
-  }
-
-  .left {
-    display: flex;
-
-    flex-direction: column;
-    margin-right: 3vw;
-    width: 90vw;
-  }
-  .leftUpper {
-    display: flex;
-    width: 90vw;
-    height: fit-content;
-    flex-direction: row;
-  }
-
-  .leftUpper h1 {
-    font-size: 10vw;
-    display: flex;
-    align-items: center;
-  }
-  .leftUpper img {
-    margin-left: 3vw;
-  }
-
-  .upperFooter {
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
-  .leftLower {
-    width: 90vw;
-  }
-
-  .middle a {
-    width: fit-content;
-  }
-
-  .itemImg {
-    width: 90vw;
-    height: 90vw;
-  }
-
-  .carouselInfoDiv div {
-    width: 90vw;
-    height: 30vw;
-    justify-content: flex-start;
-  }
-
-  .carouselInfoDiv p {
-    font-size: 6vw;
-    padding-top: 0;
-    margin-bottom: 3vw;
-    margin-top: 5vw;
-  }
-  .carouselInfoDiv {
-  }
-
-  .carouselInfoDiv a button {
-    padding-top: 1.5vw;
-    padding-bottom: 1.5vw;
-
-    width: 55vw;
-
-    font-size: 5vw;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  
-  .headerLeftDiv h1 {
-    display: flex;
-    font-size: 5vw;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 2vw;
-    align-items: center;
-  }
-
-  .PIDesc p{
-    font-size: 3vw;
-  }
-  
-  .sec4LeftBackImg {
-    height: 50px;
-  }
-  .sec4LeftBackImg::before {
-     
-  }
-}
-
-@media only screen and (max-width: 284px) {
-
-  .headerLeftDiv h1 {
-    display: flex;
-    font-size: 8vw;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 2vw;
-    align-items: center;
-  }
-
-  .PIDesc p{
-    font-size: 4vw;
-  }
-  .inline_row img {
-    width: 5vw;
-    height: 5vw;
-  }
-  .inline_row span {
-    font-size: 5vw;
-  }
-
-  .lowerFooter hr {
-    margin-left: 6vw;
-    margin-right: 6vw;
-  }
-
-  .lowerFooter p {
-    font-size: 6vw;
-  }
-
-  .middle h3 {
-    font-size: 12vw;
-  }
-
-  .right h3 {
-    font-size: 12vw;
-  }
-
-  .MenuIcon {
-    margin-right: 4vw;
-  }
-
-  
-}
